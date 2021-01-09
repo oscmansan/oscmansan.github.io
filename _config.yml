@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Oscar Mañas"
 title_separator          : "-"
 name                     : &name "Oscar Mañas"
-description              : &description "Researcher Intern in Computer Vision and Machine Learning"
+description              : &description "Researcher in Computer Vision and Machine Learning"
 url                      : https://oscmansan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "oscmansan/oscmansan.github.io"
@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Oscar Mañas"
   avatar           : "profile.png"
-  bio              : "Researcher Intern in Computer Vision and Machine Learning"
+  bio              : "Researcher in Computer Vision and Machine Learning"
   location         : "Montreal, Canada"
-  employer         : "Element AI"
+  employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=Crn-tf0AAAAJ"
   email            :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      :
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/oscmansan"
   orcid            : "https://orcid.org/0000-0001-5512-7664"
   pinterest        :
   soundcloud       :
