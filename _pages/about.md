@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-### About me
+## About me
 
 I am Oscar Mañas, a research intern at [Element AI](https://www.elementai.com/research) in Montreal, under the supervision of [Pau Rodríguez](https://prlz77.github.io) and [David Vázquez](http://www.david-vazquez.com). I am interested in data-efficient machine vision algorithms, i.e. learning semantic representations from visual data with reduced (human) supervision. I am also interested in methods for reducing the computational cost of deep learning. Currently, I am looking for a PhD position starting in spring 2021.
 
