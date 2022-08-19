@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Oscar Mañas"
 title_separator          : "-"
 name                     : &name "Oscar Mañas"
-description              : &description "PhD Student in Machine Learning"
+description              : &description "PhD Student in Deep Learning"
 url                      : https://oscmansan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "oscmansan/oscmansan.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Oscar Mañas"
   avatar           : "oscmansan.jpg"
-  bio              : "PhD Student in Machine Learning"
+  bio              : "PhD Student in Deep Learning"
   location         : "Montreal, Canada"
   employer         :
   pubmed           :
