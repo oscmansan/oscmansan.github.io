@@ -24,14 +24,14 @@ def generate_markdown(publications):
         os.makedirs(OUTPUT_DIR)
     
     for pub in publications:
-        filename = f"{pub['authors'][0]['name'].split()[-1].lower()}{pub['year']}{pub['title'].split()[0].lower()}.md"
+        filename = f"{pub['authors'][0]['name'].split()[-1].lower()}{pub['year']}{pub['title'].replace(' ', '-').lower()}.md"
         filepath = os.path.join(OUTPUT_DIR, filename)
         
         front_matter = {
             "title": pub["title"],
             "collection": "publications",
-            "permalink": f"/publication/{filename}",
-            "date": f"{pub['year']}-01-01",
+            "permalink": f"/publication/{filename[:-3]}",
+            "year": pub['year'],
             "venue": pub.get("venue", ""),
             "authors": ", ".join([author["name"] for author in pub["authors"]]),
             "paperurl": pub.get("url", ""),
@@ -42,7 +42,6 @@ def generate_markdown(publications):
             f.write("---\n")
             yaml.dump(front_matter, f, default_flow_style=False)
             f.write("---\n\n")
-            f.write(f"[Access paper here]({pub['url']})\n")
 
 # Main function
 def main():

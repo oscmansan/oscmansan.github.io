@@ -8,12 +8,11 @@ authors: "Florian Bordes, Richard Yuanzhe Pang, Anurag Ajay, Alexander C. Li, Ad
   \ Moayeri, Arjang Talattof, Kamalika Chaudhuri, Zechun Liu, Xilun Chen, Q. Garrido,\
   \ Karen Ullrich, Aishwarya Agrawal, Kate Saenko, Asli Celikyilmaz, Vikas Chandra"
 collection: publications
-date: '2024-01-01'
 excerpt: null
 paperurl: https://www.semanticscholar.org/paper/727262167f8fc61cce09f3a3ec602b0426e7db4d
-permalink: /publication/bordes2024an.md
+permalink: /publication/bordes2024an-introduction-to-vision-language-modeling
 title: An Introduction to Vision-Language Modeling
 venue: arXiv.org
+year: 2024
 ---
 
-[Access paper here](https://www.semanticscholar.org/paper/727262167f8fc61cce09f3a3ec602b0426e7db4d)
