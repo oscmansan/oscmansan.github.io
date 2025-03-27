@@ -22,7 +22,7 @@ repository               : "oscmansan/oscmansan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Oscar Mañas-19.jpg"
   name             : "Oscar Mañas"
   pronouns         : # example: "she/her"  
   bio              : "Researcher in Multimodal Vision-Language Learning"
