@@ -29,7 +29,7 @@ author:
   location         : "Montreal, Quebec, Canada"
   employer         : "Meta FAIR"
   uri              : # URL
-  email            : "\"@\".join([\".\".join([\"oscar\", \"manas\"]), \".\".join([\"gmail\", \"com\"])])"
+  email            : "oscar.manas@mila.quebec"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
