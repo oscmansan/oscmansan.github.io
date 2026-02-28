@@ -14,9 +14,9 @@
 Research Scientist, Meta Superintelligence Labs — Media Generation team, Zürich
 
 ## Education
-PhD, Mila / Université de Montréal (advisor: Aishwarya Agrawal)
-M.Sc. Computer Vision, Universitat Autònoma de Barcelona
-B.Sc. Computer Science, Universitat Politècnica de Catalunya
+PhD Computer Science, Mila / Université de Montréal (advisor: Aishwarya Agrawal)
+MSc Computer Vision, Universitat Autònoma de Barcelona
+BSc Computer Science, Universitat Politècnica de Catalunya
 
 ## Links
 - Website: https://oscmansan.github.io
