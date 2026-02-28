@@ -1,0 +1,25 @@
+# Oscar Mañas
+
+> Research Scientist at Meta Superintelligence Labs (Media Generation team). 
+> Multimodal AI researcher specializing in vision-language generative models — 
+> image, video, and text generation and understanding.
+
+## Expertise
+- Multimodal generative models (image, video, text)
+- Vision-language understanding and generation
+- Multimodal LLMs, diffusion models, autoregressive generation
+- Contrastive learning, image-text alignment
+
+## Current Role
+Research Scientist, Meta Superintelligence Labs — Media Generation team, Zürich
+
+## Education
+PhD, Mila / Université de Montréal (advisor: Aishwarya Agrawal)
+M.Sc. Computer Vision, Universitat Autònoma de Barcelona
+B.Sc. Computer Science, Universitat Politècnica de Catalunya
+
+## Links
+- Website: https://oscmansan.github.io
+- Google Scholar: https://scholar.google.com/citations?user=Crn-tf0AAAAJ
+- LinkedIn: https://www.linkedin.com/in/oscmansan
+- GitHub: https://github.com/oscmansan
