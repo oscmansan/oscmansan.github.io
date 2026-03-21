@@ -1,13 +1,11 @@
 ---
-authors: "Oscar Ma\xF1as, Alexandre Lacoste, Xavier Gir\xF3-i-Nieto, David V\xE1zquez,\
-  \ Pau Rodr\xEDguez L\xF3pez"
+title: "Seasonal Contrast: Unsupervised Pre-Training from Uncurated Remote Sensing Data"
+authors: "<strong>Oscar Mañas</strong>, Alexandre Lacoste, Xavier Giró-i-Nieto, David Vázquez, Pau Rodríguez"
 collection: publications
-excerpt: null
-paperurl: https://www.semanticscholar.org/paper/631164d699078895e6b2c20ea51e7521fb695471
-permalink: "/publication/ma\xF1as2021seasonal-contrast:-unsupervised-pre-training-from-uncurated-remote-sensing-data"
-title: 'Seasonal Contrast: Unsupervised Pre-Training from Uncurated Remote Sensing
-  Data'
-venue: IEEE International Conference on Computer Vision
+venue: "ICCV 2021"
 year: 2021
+paperurl: "https://arxiv.org/abs/2103.16607"
+permalink: "/publication/mañas2021seasonal-contrast:-unsupervised-pre-training-from-uncurated-remote-sensing-data"
+selected: true
+excerpt: null
 ---
-

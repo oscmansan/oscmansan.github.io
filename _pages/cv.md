@@ -3,62 +3,44 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
+description: "CV of Oscar Mañas — Research Scientist at Meta Superintelligence Labs, PhD from Mila / Université de Montréal."
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Work Experience
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Research Scientist**, Meta Superintelligence Labs, Zurich, Switzerland (Oct 2025 -- present)
+  * GenMedia team
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Visiting Researcher**, Meta FAIR, Montreal, Canada
+  * Advised by Dr. [Michal Drozdzal](https://www.linkedin.com/in/michal-drozdzal-a36b9b42) and Prof. [Adriana Romero](https://sites.google.com/site/adriromsor/home)
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Research Intern**, Element AI / ServiceNow, Montreal, Canada
+  * Advised by Dr. [Pau Rodríguez](https://prlz77.github.io) and Dr. [David Vázquez](http://www.david-vazquez.com)
 
-Publications
-======
+## Education
+
+* **Ph.D. Computer Science**, [Mila](https://mila.quebec/en/) / [Université de Montréal](https://diro.umontreal.ca/english/home/), 2021 -- 2025
+  * Thesis: [Towards efficient, reliable and measurable vision-language systems](https://hdl.handle.net/1866/44263)
+  * Supervised by Prof. [Aishwarya Agrawal](https://www.iro.umontreal.ca/~agrawal/)
+
+* **M.Sc. Computer Vision**, [Universitat Autònoma de Barcelona](https://www.uab.cat)
+  * Thesis at the [Image Processing Group](https://imatge.upc.edu/web/) (UPC), advised by Prof. [Xavier Giró](https://imatge.upc.edu/web/people/xavier-giro)
+
+* **B.Sc. Computer Science**, [Universitat Politècnica de Catalunya](https://www.upc.edu)
+  * Thesis at the [Architectures and Compilers Group](https://arco.e.ac.upc.edu/wiki/index.php/Main_Page), advised by Prof. [Antonio Gonzalez](https://people.ac.upc.edu/antonio) and Dr. [Jose-Maria Arnau](http://jarnau.site.ac.upc.edu)
+
+## Skills
+
+* **Languages:** Python, C/C++, Bash
+* **Frameworks:** PyTorch, Hugging Face, JAX
+* **Tools:** Git, Docker, Slurm, Weights & Biases
+
+## Publications
+
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams

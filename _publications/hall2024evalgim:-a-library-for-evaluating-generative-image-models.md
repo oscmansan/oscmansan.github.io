@@ -1,14 +1,11 @@
 ---
-authors: "Melissa Hall, Oscar Ma\xF1as, Reyhane Askari, Mark Ibrahim, Candace Ross,\
-  \ Pietro Astolfi, Tariq Berrada Ifriqi, Marton Havasi, Yohann Benchetrit, Karen\
-  \ Ullrich, Carolina Braga, Abhishek Charnalia, Maeve Ryan, Michael Rabbat, M. Drozdzal,\
-  \ Jakob Verbeek, Adriana Romero Soriano"
+title: "EvalGIM: A Library for Evaluating Generative Image Models"
+authors: "Melissa Hall, <strong>Oscar Mañas</strong>, Reyhane Askari Hemmat, Mark Ibrahim, Candace Ross, Pietro Astolfi, Tariq Berrada Ifriqi, Marton Havasi, Yohann Benchetrit, Karen Ullrich, Carolina Braga, Abhishek Charnalia, Maeve Ryan, Mike Rabbat, Michal Drozdzal, Jakob Verbeek, Adriana Romero-Soriano"
 collection: publications
-excerpt: null
-paperurl: https://www.semanticscholar.org/paper/56710b17019a0264354929f7ef94e4db83c079b9
-permalink: /publication/hall2024evalgim:-a-library-for-evaluating-generative-image-models
-title: 'EvalGIM: A Library for Evaluating Generative Image Models'
-venue: arXiv.org
+venue: "arXiv 2024"
 year: 2024
+paperurl: "https://arxiv.org/abs/2412.10604"
+codeurl: "https://github.com/facebookresearch/EvalGIM"
+permalink: "/publication/hall2024evalgim:-a-library-for-evaluating-generative-image-models"
+excerpt: null
 ---
-
