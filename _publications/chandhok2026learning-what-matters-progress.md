@@ -1,5 +1,6 @@
 ---
 title: "Learning What Matters: Prioritized Concept Learning via Relative Error-driven Sample Selection"
+image: "pubs/progress.png"
 authors: "Shivam Chandhok, Qian Yang, <strong>Oscar Mañas</strong>, Kanishk Jain, Leonid Sigal, Aishwarya Agrawal"
 collection: publications
 venue: "CVPR 2026"

@@ -1,5 +1,6 @@
 ---
 title: "MAPL: Parameter-Efficient Adaptation of Unimodal Pre-Trained Models for Vision-Language Few-Shot Prompting"
+image: "pubs/mapl.png"
 authors: "<strong>Oscar Mañas</strong>, Pau Rodríguez, Saba Ahmadi, Aida Nematzadeh, Yash Goyal, Aishwarya Agrawal"
 collection: publications
 venue: "EACL 2023"

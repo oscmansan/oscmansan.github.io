@@ -1,5 +1,6 @@
 ---
 title: "LatentLens: Revealing Highly Interpretable Visual Tokens in LLMs"
+image: "pubs/latentlens.png"
 authors: "Benno Krojer, Shravan Nayak, <strong>Oscar Mañas</strong>, Vaibhav Adlakha, Desmond Elliott, Siva Reddy, Marius Mosbach"
 collection: publications
 venue: "arXiv 2026"

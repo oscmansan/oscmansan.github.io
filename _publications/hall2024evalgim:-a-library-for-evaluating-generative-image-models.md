@@ -1,5 +1,6 @@
 ---
 title: "EvalGIM: A Library for Evaluating Generative Image Models"
+image: "pubs/evalgim.png"
 authors: "Melissa Hall, <strong>Oscar Mañas</strong>, Reyhane Askari Hemmat, Mark Ibrahim, Candace Ross, Pietro Astolfi, Tariq Berrada Ifriqi, Marton Havasi, Yohann Benchetrit, Karen Ullrich, Carolina Braga, Abhishek Charnalia, Maeve Ryan, Mike Rabbat, Michal Drozdzal, Jakob Verbeek, Adriana Romero-Soriano"
 collection: publications
 venue: "arXiv 2024"

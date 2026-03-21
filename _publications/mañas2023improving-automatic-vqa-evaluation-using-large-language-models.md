@@ -1,5 +1,6 @@
 ---
 title: "Improving Automatic VQA Evaluation Using Large Language Models"
+image: "pubs/lave.png"
 authors: "<strong>Oscar Mañas</strong>, Benno Krojer, Aishwarya Agrawal"
 collection: publications
 venue: "AAAI 2024"

@@ -1,5 +1,6 @@
 ---
 title: "Controlling Multimodal LLMs via Reward-guided Decoding"
+image: "pubs/mrgd.png"
 authors: "<strong>Oscar Mañas</strong>, Pierluca D'Oro, Koustuv Sinha, Adriana Romero-Soriano, Michal Drozdzal, Aishwarya Agrawal"
 collection: publications
 venue: "ICCV 2025"

@@ -1,5 +1,6 @@
 ---
 title: "A Weakly Supervised Consistency-based Learning Method for COVID-19 Segmentation in CT Images"
+image: "pubs/covid.png"
 authors: "Issam Laradji, Pau Rodríguez, <strong>Oscar Mañas</strong>, Keegan Lensink, Marco Law, Lironne Kurzman, William Parker, David Vázquez, Derek Nowrouzezahrai"
 collection: publications
 venue: "WACV 2021"

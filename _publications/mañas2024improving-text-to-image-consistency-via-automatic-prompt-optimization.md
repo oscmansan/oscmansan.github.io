@@ -1,5 +1,6 @@
 ---
 title: "Improving Text-to-Image Consistency via Automatic Prompt Optimization"
+image: "pubs/opt2i.png"
 authors: "<strong>Oscar Mañas</strong>, Pietro Astolfi, Melissa Hall, Candace Ross, Jack Urbanek, Adina Williams, Aishwarya Agrawal, Adriana Romero-Soriano, Michal Drozdzal"
 collection: publications
 venue: "TMLR 2024"

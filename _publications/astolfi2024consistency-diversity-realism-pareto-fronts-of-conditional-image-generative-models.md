@@ -1,5 +1,6 @@
 ---
 title: "Consistency-Diversity-Realism Pareto Fronts of Conditional Image Generative Models"
+image: "pubs/pareto.png"
 authors: "Pietro Astolfi, Marlene Careil, Melissa Hall, <strong>Oscar Mañas</strong>, Matthew Muckley, Jakob Verbeek, Adriana Romero-Soriano, Michal Drozdzal"
 collection: publications
 venue: "arXiv 2024"
