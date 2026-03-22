@@ -214,26 +214,16 @@ html:not([data-theme="dark"]) .pub-badge {
   }
 }
 
-/* Mobile sidebar: hide keyword tags, remove Follow button */
+/* Mobile sidebar: hide keyword tags and social links to keep it compact */
 @media (max-width: 1023px) {
   .author__keywords {
     display: none;
   }
-  .author__urls-wrapper button {
+  .author__urls-wrapper {
     display: none;
   }
-  .author__urls {
-    display: block !important;
-    position: static;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    z-index: auto;
-  }
-  .author__urls::before {
-    display: none;
+  .author__bio {
+    font-size: 0.9em;
   }
 }
 
