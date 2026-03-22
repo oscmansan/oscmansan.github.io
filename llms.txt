@@ -1,25 +1,66 @@
 # Oscar Mañas
 
-> Research Scientist at Meta Superintelligence Labs (Media Generation team). 
-> Multimodal AI researcher specializing in vision-language generative models — 
-> image, video, and text generation and understanding.
-
-## Expertise
-- Multimodal generative models (image, video, text)
-- Vision-language understanding and generation
-- Multimodal LLMs, diffusion models, autoregressive generation
-- Contrastive learning, image-text alignment
+> Research Scientist at Meta Superintelligence Labs (Media Generation team), Zurich.
+> Multimodal AI researcher specializing in vision-language generative models —
+> image, video, and text generation and understanding. Focus on efficiency of generative models.
 
 ## Current Role
-Research Scientist, Meta Superintelligence Labs — Media Generation team, Zürich
+
+Research Scientist, Meta Superintelligence Labs — Media Generation team, Zürich (Oct 2025 – present)
+Working on generative model distillation and real-time interactive video generation.
+
+## Previous Roles
+
+- Visiting Researcher, Meta FAIR, Montreal (Jan 2024 – 2025). Multimodal vision-language understanding and generation.
+- Research Scientist Intern, FAIR Labs, Meta AI, Montreal (Jun 2023 – 2023). Text-conditioned image generation.
+- Research Intern, Element AI / ServiceNow, Montreal (2020 – 2021). Data-efficient ML and self-supervised visual representation learning.
 
 ## Education
-PhD Computer Science, Mila / Université de Montréal (advisor: Aishwarya Agrawal)
-MSc Computer Vision, Universitat Autònoma de Barcelona
-BSc Computer Science, Universitat Politècnica de Catalunya
+
+- PhD Computer Science, Mila / Université de Montréal (2021–2025). Advisor: Prof. Aishwarya Agrawal. GPA 4.3/4.3. Thesis: "Towards efficient, reliable and measurable vision-language systems" (https://hdl.handle.net/1866/44263)
+- MSc Computer Vision, Universitat Autònoma de Barcelona / Computer Vision Center (2018–2020). Rank 1/35.
+- BSc Computer Science, Universitat Politècnica de Catalunya (2013–2017). Rank 1/235.
+
+## Research Expertise
+
+- Video generation and efficient generative models
+- Multimodal vision-language generative models (image, video, text)
+- Multimodal LLMs and reward-guided decoding
+- Diffusion models, distillation, real-time generation
+- Contrastive and self-supervised representation learning
+- Vision-language alignment and evaluation
+
+## Publications (12 papers, sorted by arXiv submission date)
+
+1. "LatentLens: Revealing Highly Interpretable Visual Tokens in LLMs" — arXiv Feb 2026. https://arxiv.org/abs/2602.00462
+2. "SneakPeek: Future-Guided Instructional Streaming Video Generation" — arXiv Dec 2025. https://arxiv.org/abs/2512.13019
+3. "Controlling Multimodal LLMs via Reward-guided Decoding" — ICCV 2025 (accepted Jun 2025). https://arxiv.org/abs/2508.11616
+4. "Learning What Matters: Prioritized Concept Learning via Relative Error-driven Sample Selection" — CVPR 2026 (arXiv Jun 2025). https://arxiv.org/abs/2506.01085
+5. "EvalGIM: A Library for Evaluating Generative Image Models" — arXiv Dec 2024. https://arxiv.org/abs/2412.10604
+6. "Consistency, Diversity and Realism: Pareto Fronts of Conditional Image Generative Models" — arXiv Jun 2024. https://arxiv.org/abs/2406.10429
+7. "An Introduction to Vision-Language Modeling" — arXiv May 2024. https://arxiv.org/abs/2405.17247
+8. "Improving Text-to-Image Consistency via Automatic Prompt Optimization" — TMLR (accepted Jun 2024). https://arxiv.org/abs/2403.17804
+9. "Improving Automatic VQA Evaluation Using Large Language Models" — AAAI 2024 (accepted Dec 2023). https://arxiv.org/abs/2310.02567
+10. "MAPL: Parameter-Efficient Adaptation of Unimodal Pre-Trained Models for Vision-Language Few-Shot Prompting" — EACL 2023. https://arxiv.org/abs/2210.07179
+11. "Seasonal Contrast: Unsupervised Pre-Training from Uncurated Remote Sensing Data" — ICCV 2021. https://arxiv.org/abs/2103.16607
+12. "A Weakly Supervised Consistency-based Learning Method for COVID-19 Segmentation in CT Images" — WACV 2021. https://arxiv.org/abs/2007.02180
+
+## Selected Awards
+
+- J. Armand Bombardier Excellence Grant, Université de Montréal (2024, 2025)
+- DIRO Excellence Grant, Université de Montréal (2023, 2024)
+- National End-of-Degree Award in University Education, Spanish Ministry of Education (2021)
+- Mila PhD Scholarship, Mila - Quebec AI Institute (2021)
+- Mitacs Accelerate International Grant, Mitacs Canada (2020)
+
+## Invited Talks
+
+- Spotlight talk, Deep Learning Barcelona Symposium 2025 (Dec 2025). Recording: https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521
 
 ## Links
+
 - Website: https://oscmansan.github.io
 - Google Scholar: https://scholar.google.com/citations?user=Crn-tf0AAAAJ
 - LinkedIn: https://www.linkedin.com/in/oscmansan
 - GitHub: https://github.com/oscmansan
+- Bluesky: https://bsky.app/profile/oscmansan.bsky.social

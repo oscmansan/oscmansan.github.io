@@ -18,7 +18,7 @@ Previously, I was a Visiting Researcher at [Meta FAIR](https://ai.meta.com/resea
 
 <div class="news-list" markdown="0">
 <ul>
-<li><span class="news-date">Feb 2026</span> PhD thesis published: <a href="https://hdl.handle.net/1866/44263"><em>Towards efficient, reliable and measurable vision-language systems</em></a></li>
+<li><span class="news-date">Feb 2026</span> PhD thesis published: <a href="https://hdl.handle.net/1866/44263">Towards efficient, reliable and measurable vision-language systems</a></li>
 <li><span class="news-date">Dec 2025</span> Spotlight talk at the <a href="https://sites.google.com/view/dlbcn2025/program/talks">Deep Learning Barcelona Symposium</a> (<a href="https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521">recording</a>)</li>
 <li><span class="news-date">Nov 2025</span> Defended my PhD thesis and graduated from Mila / Université de Montréal</li>
 <li><span class="news-date">Oct 2025</span> Started as Research Scientist at <a href="https://ai.meta.com/">Meta Superintelligence Labs</a>, Media Generation team, Zurich</li>

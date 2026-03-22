@@ -46,14 +46,36 @@ code, pre {
   font-weight: 700;
   font-size: 2em;
 }
-.author__bio {
-  font-size: 0.9em;
-  font-weight: 300;
-  opacity: 0.85;
+.author__name a {
+  text-decoration: none;
+  color: inherit;
 }
-.author__urls-wrapper a {
-  font-size: 0.9em;
+.author__bio {
+  font-size: 1em;
   font-weight: 400;
+  opacity: 0.85;
+  margin-top: 0.3em;
+}
+.author__urls-wrapper a,
+.author__urls li {
+  font-size: 0.95em;
+  font-weight: 400;
+}
+/* Research keyword tags */
+.author__keywords {
+  margin-top: 0.75em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em;
+}
+.author__keyword {
+  font-size: 0.72em;
+  font-weight: 500;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  border: 1px solid rgba(118, 202, 241, 0.35);
+  color: #76caf1;
+  white-space: nowrap;
 }
 
 /* News section — bullet list */
@@ -194,6 +216,20 @@ code, pre {
 .page__content li > strong:first-child {
   color: #76caf1;
 }
+/* Reviewer/service category labels */
+.page__content li > strong:first-child + em,
+.page__content li > strong:first-child ~ * {
+  color: inherit;
+}
+/* Award names — golden (awards section list items have no bold, target via class) */
+.awards-list li {
+  color: #fae377;
+}
+.awards-list li .award-org {
+  color: inherit;
+  opacity: 0.75;
+  font-weight: 300;
+}
 
 /* Light theme overrides for palette colors */
 html:not([data-theme="dark"]) .pub-title,
@@ -218,6 +254,13 @@ html:not([data-theme="dark"]) .page__content li > strong:first-child {
 }
 html:not([data-theme="dark"]) .page__content h2 {
   border-bottom-color: rgba(74, 79, 208, 0.2);
+}
+html:not([data-theme="dark"]) .author__keyword {
+  color: #2a6fa8;
+  border-color: rgba(42, 111, 168, 0.35);
+}
+html:not([data-theme="dark"]) .awards-list li {
+  color: #8a6800;
 }
 </style>
 

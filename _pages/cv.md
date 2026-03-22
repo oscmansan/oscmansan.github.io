@@ -63,11 +63,13 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 
 ## Selected Awards
 
+<div class="awards-list" markdown="1">
 * J. Armand Bombardier Excellence Grant, Université de Montréal (2024, 2025)
 * DIRO Excellence Grant, Université de Montréal (2023, 2024)
 * National End-of-Degree Award in University Education, Spanish Ministry of Education (2021)
 * Mila PhD Scholarship, Mila - Quebec AI Institute (2021)
 * Mitacs Accelerate International Grant, Mitacs Canada (2020)
+</div>
 
 ## Academic Service
 
