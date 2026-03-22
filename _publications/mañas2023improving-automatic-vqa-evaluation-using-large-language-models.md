@@ -4,6 +4,7 @@ image: "pubs/lave.png"
 authors: "<strong>Oscar Mañas</strong>, Benno Krojer, Aishwarya Agrawal"
 collection: publications
 venue: "AAAI 2024"
+sort_date: 202310
 year: 2024
 paperurl: "https://arxiv.org/abs/2310.02567"
 permalink: "/publication/mañas2023improving-automatic-vqa-evaluation-using-large-language-models"

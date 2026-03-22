@@ -9,7 +9,7 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#1e2b36"/>
+<meta name="theme-color" content="#282b35"/>
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
 <!-- Web fonts -->
@@ -25,30 +25,26 @@
 <style>
 /* Typography override */
 body {
-  font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.011em;
 }
 h1, h2, h3 {
-  font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 h4, h5, h6 {
-  font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 code, pre {
-  font-family: 'Google Sans Mono', Monaco, Consolas, monospace;
   font-weight: 400;
 }
 
 /* Author sidebar polish */
 .author__name {
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 2em;
 }
 .author__bio {
   font-size: 0.9em;
@@ -78,7 +74,7 @@ code, pre {
 .news-list .news-date {
   font-weight: 500;
   font-size: 0.85em;
-  color: var(--global-text-color-light, #5e6e7a);
+  color: #fae377;
   margin-right: 0.8em;
 }
 
@@ -87,7 +83,7 @@ code, pre {
   font-size: 1.3em;
   margin-top: 2em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid var(--global-border-color, #243040);
+  border-bottom: 1px solid rgba(118, 202, 241, 0.25);
 }
 
 /* Barron-style publication entries */
@@ -119,8 +115,10 @@ code, pre {
 }
 .pub-title {
   font-weight: 500;
+  color: #878df8;
 }
 .pub-title a {
+  color: #878df8;
   text-decoration: none;
 }
 .pub-title a:hover {
@@ -130,13 +128,31 @@ code, pre {
   font-size: 0.9em;
   font-weight: 300;
 }
+/* Author's own name — bold only, no color (sidebar already identifies the site owner) */
+.pub-authors strong {
+  font-weight: 500;
+}
+/* Venue name in golden */
+.pub-text em {
+  color: #fae377;
+  font-style: normal;
+  font-weight: 400;
+}
+/* Pill-style links */
 .pub-links a {
-  font-size: 0.85em;
+  display: inline-block;
+  font-size: 0.8em;
   font-weight: 400;
   text-decoration: none;
+  padding: 0.1em 0.55em;
+  border-radius: 3px;
+  border: 1px solid rgba(118, 202, 241, 0.4);
+  color: #76caf1;
+  margin-right: 0.25em;
 }
 .pub-links a:hover {
-  text-decoration: underline;
+  border-color: #76caf1;
+  text-decoration: none;
 }
 
 /* Responsive: stack on mobile */
@@ -171,6 +187,37 @@ code, pre {
   border: 1px solid var(--global-border-color, #243040);
   font-size: 0.85em;
   font-weight: 500;
+}
+
+/* CV page accents */
+/* Role/position/degree titles (first bold in each list item) */
+.page__content li > strong:first-child {
+  color: #76caf1;
+}
+
+/* Light theme overrides for palette colors */
+html:not([data-theme="dark"]) .pub-title,
+html:not([data-theme="dark"]) .pub-title a {
+  color: #4a4fd0;
+}
+html:not([data-theme="dark"]) .pub-text em {
+  color: #8a6800;
+}
+html:not([data-theme="dark"]) .news-list .news-date {
+  color: #8a6800;
+}
+html:not([data-theme="dark"]) .pub-links a {
+  color: #1a6fa8;
+  border-color: rgba(26, 111, 168, 0.4);
+}
+html:not([data-theme="dark"]) .pub-links a:hover {
+  border-color: #1a6fa8;
+}
+html:not([data-theme="dark"]) .page__content li > strong:first-child {
+  color: #4a4fd0;
+}
+html:not([data-theme="dark"]) .page__content h2 {
+  border-bottom-color: rgba(74, 79, 208, 0.2);
 }
 </style>
 

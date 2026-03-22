@@ -3,18 +3,18 @@
    ========================================================================== */
 
 /* Color palette — teal-navy family */
-$text                       : #1e2b36;
-$text-muted                 : #5e6e7a;
-$link                       : #1a8080;
-$border                     : #dde6ed;
-$surface                    : #f0f5f7;
+$text                       : #282b35;
+$text-muted                 : #777777;
+$link                       : #2a6fa8;
+$border                     : #e0e4ed;
+$surface                    : #f2f3f7;
 
 /* Kept for compatibility with theme mixins */
-$gray                       : #5e6e7a;
-$dark-gray                  : #2d3d4e;
-$darker-gray                : #1e2b36;
-$light-gray                 : #8fa0aa;
-$lighter-gray               : #dde6ed;
+$gray                       : #777777;
+$dark-gray                  : #3d4150;
+$darker-gray                : #282b35;
+$light-gray                 : #9a9eaa;
+$lighter-gray               : #e0e4ed;
 
 /* Status colors */
 $danger-color               : #c0392b;

@@ -1,29 +1,30 @@
 /* ==========================================================================
-   DARK THEME — inspired by Google Sans Code sample palette
+   DARK THEME — Google Sans Code exact palette
    ========================================================================== */
 
 /* Color palette */
-$gray                       : #5e6e7a;
+$gray                       : #777777;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
-$background                 : #1e2b36;
-$background-light           : #243040;
-$background-lighter         : #2d3d4e;
-$text                       : #dde6ed;
-$text-muted                 : #5e6e7a;
-$link                       : #7dd3d8;
+$background                 : #282b35;
+$background-light           : #32363f;
+$background-lighter         : #3d4150;
+$text                       : #e8eaf0;
+$text-muted                 : #777777;
+$link                       : #76caf1;
 $link-dark                  : mix(#000, $link, 15%);
 $link-light                 : mix(#fff, $link, 20%);
-$accent-gold                : #e8c46a;
+$accent-gold                : #fae377;
+$accent-periwinkle          : #878df8;
 
 /* Status colors */
 $danger-color               : #f87171;
-$info-color                 : #7dd3d8;
-$notice-color               : #5e6e7a;
+$info-color                 : #76caf1;
+$notice-color               : #777777;
 $success-color              : #82a870;
-$warning-color              : #e8c46a;
+$warning-color              : #fae377;
 
 /* Basic settings */
 $border-radius              : 6px;

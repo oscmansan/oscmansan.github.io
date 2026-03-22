@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "dark"
-title                    : "Oscar Mañas"
+title                    : ""
 title_separator          : "-"
 name                     : &name "Oscar Mañas"
 description              : &description "Multimodal Generative AI Researcher"

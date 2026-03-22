@@ -22,15 +22,17 @@ Previously, I was a Visiting Researcher at [Meta FAIR](https://ai.meta.com/resea
 <li><span class="news-date">Dec 2025</span> Spotlight talk at the <a href="https://sites.google.com/view/dlbcn2025/program/talks">Deep Learning Barcelona Symposium</a> (<a href="https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521">recording</a>)</li>
 <li><span class="news-date">Nov 2025</span> Defended my PhD thesis and graduated from Mila / Université de Montréal</li>
 <li><span class="news-date">Oct 2025</span> Started as Research Scientist at <a href="https://ai.meta.com/">Meta Superintelligence Labs</a>, Media Generation team, Zurich</li>
-<li><span class="news-date">Aug 2025</span> Paper accepted at <a href="https://arxiv.org/abs/2508.11616">ICCV 2025</a>: <em>Controlling Multimodal LLMs via Reward-guided Decoding</em></li>
-<li><span class="news-date">Mar 2024</span> Paper accepted at <a href="https://arxiv.org/abs/2403.17804">TMLR</a>: <em>Improving Text-to-Image Consistency via Automatic Prompt Optimization</em></li>
-<li><span class="news-date">2024</span> Paper accepted at <a href="https://arxiv.org/abs/2310.02567">AAAI 2024</a>: <em>Improving Automatic VQA Evaluation Using Large Language Models</em></li>
+<li><span class="news-date">Jun 2025</span> Paper accepted at <a href="https://arxiv.org/abs/2508.11616">ICCV 2025</a>: <em>Controlling Multimodal LLMs via Reward-guided Decoding</em></li>
+<li><span class="news-date">Jun 2024</span> Paper accepted at <a href="https://arxiv.org/abs/2403.17804">TMLR</a>: <em>Improving Text-to-Image Consistency via Automatic Prompt Optimization</em></li>
+<li><span class="news-date">Jan 2024</span> Started as Visiting Researcher at <a href="https://ai.meta.com/research/">Meta FAIR</a>, Montreal</li>
+<li><span class="news-date">Dec 2023</span> Paper accepted at <a href="https://arxiv.org/abs/2310.02567">AAAI 2024</a>: <em>Improving Automatic VQA Evaluation Using Large Language Models</em></li>
+<li><span class="news-date">Jun 2023</span> Started as Research Scientist Intern at <a href="https://ai.meta.com/research/">Meta FAIR</a>, Montreal</li>
 </ul>
 </div>
 
 ## Selected Publications
 
-{% assign selected = site.publications | where: "selected", true | sort: "year" | reverse %}
+{% assign selected = site.publications | where: "selected", true | sort: "sort_date" | reverse %}
 {% for post in selected %}
   {% include archive-single.html %}
 {% endfor %}

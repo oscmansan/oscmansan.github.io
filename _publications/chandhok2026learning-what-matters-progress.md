@@ -4,6 +4,7 @@ image: "pubs/progress.png"
 authors: "Shivam Chandhok, Qian Yang, <strong>Oscar Mañas</strong>, Kanishk Jain, Leonid Sigal, Aishwarya Agrawal"
 collection: publications
 venue: "CVPR 2026"
+sort_date: 202506
 year: 2026
 paperurl: "https://arxiv.org/abs/2506.01085"
 permalink: "/publication/chandhok2026progress"

@@ -4,6 +4,7 @@ image: "pubs/covid.png"
 authors: "Issam Laradji, Pau Rodríguez, <strong>Oscar Mañas</strong>, Keegan Lensink, Marco Law, Lironne Kurzman, William Parker, David Vázquez, Derek Nowrouzezahrai"
 collection: publications
 venue: "WACV 2021"
+sort_date: 202007
 year: 2021
 paperurl: "https://arxiv.org/abs/2007.02180"
 codeurl: "https://github.com/IssamLaradji/covid19_weak_supervision"
