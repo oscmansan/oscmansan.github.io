@@ -1,28 +1,29 @@
 /* ==========================================================================
-   DARK THEME — inspired by claude.ai dark mode with cool blue accent
+   DARK THEME — inspired by Google Sans Code sample palette
    ========================================================================== */
 
 /* Color palette */
-$gray                       : #9ba1ab;
+$gray                       : #5e6e7a;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 40%);
+$light-gray                 : mix(#fff, $gray, 50%);
 
-$background                 : #191a23;
-$background-light           : #262837;
-$background-lighter         : #323449;
-$text                       : #e8e8ed;
-$text-muted                 : #9ba1ab;
-$link                       : #7b9cff;
-$link-dark                  : mix(#000, $link, 10%);
-$link-light                 : mix(#fff, $link, 15%);
+$background                 : #1e2b36;
+$background-light           : #243040;
+$background-lighter         : #2d3d4e;
+$text                       : #dde6ed;
+$text-muted                 : #5e6e7a;
+$link                       : #7dd3d8;
+$link-dark                  : mix(#000, $link, 15%);
+$link-light                 : mix(#fff, $link, 20%);
+$accent-gold                : #e8c46a;
 
-/* Status colors — all cool-toned */
+/* Status colors */
 $danger-color               : #f87171;
-$info-color                 : #7b9cff;
-$notice-color               : #9ba1ab;
-$success-color              : #4ade80;
-$warning-color              : #fbbf24;
+$info-color                 : #7dd3d8;
+$notice-color               : #5e6e7a;
+$success-color              : #82a870;
+$warning-color              : #e8c46a;
 
 /* Basic settings */
 $border-radius              : 6px;

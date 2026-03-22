@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hola! I'm Oscar Mañas. I'm a **Research Scientist at [Meta Superintelligence Labs](https://ai.meta.com/)** on the GenMedia team in Zurich. I recently completed my PhD at [Mila](https://mila.quebec/en/) and [Université de Montréal](https://diro.umontreal.ca/english/home/), advised by Prof. [Aishwarya Agrawal](https://www.iro.umontreal.ca/~agrawal/).
+Hola! I'm Oscar Mañas. I'm a **Research Scientist at [Meta Superintelligence Labs](https://ai.meta.com/)** on the Media Generation team in Zurich. I recently completed my PhD at [Mila](https://mila.quebec/en/) and [Université de Montréal](https://diro.umontreal.ca/english/home/), advised by Prof. [Aishwarya Agrawal](https://www.iro.umontreal.ca/~agrawal/).
 
 My research explores the intersection of vision and language, with a focus on **multimodal vision-language generative models**: systems capable of generating images, videos and text from multimodal inputs. I'm especially interested in building models that reason fluidly across modalities, treating them as complementary channels of perception and thought.
 
@@ -19,11 +19,12 @@ Previously, I was a Visiting Researcher at [Meta FAIR](https://ai.meta.com/resea
 <div class="news-list" markdown="0">
 <ul>
 <li><span class="news-date">Feb 2026</span> PhD thesis published: <a href="https://hdl.handle.net/1866/44263"><em>Towards efficient, reliable and measurable vision-language systems</em></a></li>
-<li><span class="news-date">Nov 2025</span> Defended my <strong>PhD thesis</strong> and graduated from Mila / Université de Montréal</li>
-<li><span class="news-date">Oct 2025</span> Started as <strong>Research Scientist</strong> at <a href="https://ai.meta.com/">Meta Superintelligence Labs</a>, GenMedia team, Zurich</li>
-<li><span class="news-date">2025</span> Paper accepted at <strong>ICCV 2025</strong>: <a href="https://arxiv.org/abs/2508.11616">Controlling Multimodal LLMs via Reward-guided Decoding</a></li>
-<li><span class="news-date">2024</span> Paper accepted at <strong>TMLR</strong>: <a href="https://arxiv.org/abs/2403.17804">Improving Text-to-Image Consistency via Automatic Prompt Optimization</a></li>
-<li><span class="news-date">2024</span> Paper accepted at <strong>AAAI 2024</strong>: <a href="https://arxiv.org/abs/2310.02567">Improving Automatic VQA Evaluation Using Large Language Models</a></li>
+<li><span class="news-date">Dec 2025</span> Spotlight talk at the <a href="https://sites.google.com/view/dlbcn2025/program/talks">Deep Learning Barcelona Symposium</a> (<a href="https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521">recording</a>)</li>
+<li><span class="news-date">Nov 2025</span> Defended my PhD thesis and graduated from Mila / Université de Montréal</li>
+<li><span class="news-date">Oct 2025</span> Started as Research Scientist at <a href="https://ai.meta.com/">Meta Superintelligence Labs</a>, Media Generation team, Zurich</li>
+<li><span class="news-date">Aug 2025</span> Paper accepted at <a href="https://arxiv.org/abs/2508.11616">ICCV 2025</a>: <em>Controlling Multimodal LLMs via Reward-guided Decoding</em></li>
+<li><span class="news-date">Mar 2024</span> Paper accepted at <a href="https://arxiv.org/abs/2403.17804">TMLR</a>: <em>Improving Text-to-Image Consistency via Automatic Prompt Optimization</em></li>
+<li><span class="news-date">2024</span> Paper accepted at <a href="https://arxiv.org/abs/2310.02567">AAAI 2024</a>: <em>Improving Automatic VQA Evaluation Using Large Language Models</em></li>
 </ul>
 </div>
 

@@ -9,13 +9,13 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#191a23"/>
+<meta name="theme-color" content="#1e2b36"/>
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
 <!-- Web fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;700&family=Google+Sans+Mono&display=swap" rel="stylesheet">
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -25,30 +25,39 @@
 <style>
 /* Typography override */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 16px;
+  font-weight: 300;
   letter-spacing: -0.011em;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-weight: 600;
+h1, h2, h3 {
+  font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
+h4, h5, h6 {
+  font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
 code, pre {
-  font-family: 'JetBrains Mono', Monaco, Consolas, monospace;
+  font-family: 'Google Sans Mono', Monaco, Consolas, monospace;
+  font-weight: 400;
 }
 
 /* Author sidebar polish */
 .author__name {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
 }
 .author__bio {
   font-size: 0.9em;
+  font-weight: 300;
   opacity: 0.85;
 }
 .author__urls-wrapper a {
   font-size: 0.9em;
+  font-weight: 400;
 }
 
 /* News section — bullet list */
@@ -60,7 +69,8 @@ code, pre {
 .news-list li {
   padding: 0.35em 0;
   line-height: 1.6;
-  border-bottom: 1px solid var(--global-border-color, #262837);
+  font-weight: 300;
+  border-bottom: 1px solid var(--global-border-color, #243040);
 }
 .news-list li:last-child {
   border-bottom: none;
@@ -68,7 +78,7 @@ code, pre {
 .news-list .news-date {
   font-weight: 500;
   font-size: 0.85em;
-  color: var(--global-text-color-light, #9ba1ab);
+  color: var(--global-text-color-light, #5e6e7a);
   margin-right: 0.8em;
 }
 
@@ -77,7 +87,7 @@ code, pre {
   font-size: 1.3em;
   margin-top: 2em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid var(--global-border-color, #262837);
+  border-bottom: 1px solid var(--global-border-color, #243040);
 }
 
 /* Barron-style publication entries */
@@ -85,7 +95,7 @@ code, pre {
   display: flex;
   gap: 1.2em;
   padding: 0.8em 0;
-  border-bottom: 1px solid var(--global-border-color, #262837);
+  border-bottom: 1px solid var(--global-border-color, #243040);
 }
 .pub-entry:last-child {
   border-bottom: none;
@@ -99,15 +109,16 @@ code, pre {
   height: 120px;
   object-fit: cover;
   border-radius: 4px;
-  background: var(--global-border-color, #262837);
+  background: #ffffff;
 }
 .pub-text {
   flex: 1;
   font-size: 0.92em;
+  font-weight: 300;
   line-height: 1.55;
 }
 .pub-title {
-  font-weight: 600;
+  font-weight: 500;
 }
 .pub-title a {
   text-decoration: none;
@@ -117,9 +128,11 @@ code, pre {
 }
 .pub-authors {
   font-size: 0.9em;
+  font-weight: 300;
 }
 .pub-links a {
   font-size: 0.85em;
+  font-weight: 400;
   text-decoration: none;
 }
 .pub-links a:hover {
@@ -144,15 +157,18 @@ code, pre {
 
 /* Masthead/nav polish */
 .masthead {
-  border-bottom: 1px solid var(--global-border-color, #21262d);
+  border-bottom: 1px solid var(--global-border-color, #243040);
 }
 .greedy-nav a.site-title {
-  font-weight: 600;
+  font-weight: 700;
+}
+.greedy-nav .visible-links a {
+  font-weight: 500;
 }
 
 /* Button style */
 .btn--inverse {
-  border: 1px solid var(--global-border-color, #21262d);
+  border: 1px solid var(--global-border-color, #243040);
   font-size: 0.85em;
   font-weight: 500;
 }
