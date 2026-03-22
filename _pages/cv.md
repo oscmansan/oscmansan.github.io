@@ -63,13 +63,13 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 
 ## Selected Awards
 
-<div class="awards-list" markdown="1">
-* J. Armand Bombardier Excellence Grant, Université de Montréal <span class="cv-date">(2024, 2025)</span>
-* DIRO Excellence Grant, Université de Montréal <span class="cv-date">(2023, 2024)</span>
-* National End-of-Degree Award in University Education, Spanish Ministry of Education <span class="cv-date">(2021)</span>
-* Mila PhD Scholarship, Mila - Quebec AI Institute <span class="cv-date">(2021)</span>
-* Mitacs Accelerate International Grant, Mitacs Canada <span class="cv-date">(2020)</span>
-</div>
+* **J. Armand Bombardier Excellence Grant**, Université de Montréal <span class="cv-date">(2024, 2025)</span>
+* **Artificial Intelligence Grant**, Université de Montréal <span class="cv-date">(2024)</span>
+* **DIRO Excellence Grant**, Université de Montréal <span class="cv-date">(2023, 2024)</span>
+* **J.A. DeSève Excellence Grant**, Université de Montréal <span class="cv-date">(2022)</span>
+* **National End-of-Degree Award in University Education**, Spanish Ministry of Education <span class="cv-date">(2021)</span>
+* **Mila PhD Scholarship**, Mila - Quebec AI Institute <span class="cv-date">(2021)</span>
+* **Mitacs Accelerate International Grant**, Mitacs Canada <span class="cv-date">(2020)</span>
 
 ## Academic Service
 

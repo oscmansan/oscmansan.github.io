@@ -105,7 +105,8 @@ code, pre {
 }
 
 /* Section headings */
-.page__content h2 {
+.page__content h2,
+.archive h2 {
   font-size: 1.3em;
   margin-top: 2em;
   padding-bottom: 0.3em;
@@ -233,11 +234,8 @@ html:not([data-theme="dark"]) .pub-badge {
 
 /* CV page accents */
 /* Role/position/degree/service titles (first bold in each list item) */
-.page__content li > strong:first-child {
-  color: #878df8;
-}
-/* Award names — periwinkle */
-.awards-list li {
+.page__content li > strong:first-child,
+.archive li > strong:first-child {
   color: #878df8;
 }
 /* Dates — gold */
@@ -263,16 +261,15 @@ html:not([data-theme="dark"]) .pub-links a {
 html:not([data-theme="dark"]) .pub-links a:hover {
   border-color: #1a6fa8;
 }
-html:not([data-theme="dark"]) .page__content li > strong:first-child {
-  color: #4a4fd0;
-}
-html:not([data-theme="dark"]) .awards-list li {
+html:not([data-theme="dark"]) .page__content li > strong:first-child,
+html:not([data-theme="dark"]) .archive li > strong:first-child {
   color: #4a4fd0;
 }
 html:not([data-theme="dark"]) .cv-date {
   color: #c47a00;
 }
-html:not([data-theme="dark"]) .page__content h2 {
+html:not([data-theme="dark"]) .page__content h2,
+html:not([data-theme="dark"]) .archive h2 {
   border-bottom-color: rgba(74, 79, 208, 0.2);
 }
 html:not([data-theme="dark"]) .author__keyword {
