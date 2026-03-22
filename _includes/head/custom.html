@@ -214,6 +214,29 @@ html:not([data-theme="dark"]) .pub-badge {
   }
 }
 
+/* Mobile sidebar: hide keyword tags, remove Follow button */
+@media (max-width: 1023px) {
+  .author__keywords {
+    display: none;
+  }
+  .author__urls-wrapper button {
+    display: none;
+  }
+  .author__urls {
+    display: block !important;
+    position: static;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    z-index: auto;
+  }
+  .author__urls::before {
+    display: none;
+  }
+}
+
 /* Masthead/nav polish */
 .masthead {
   border-bottom: 1px solid var(--global-border-color, #243040);
