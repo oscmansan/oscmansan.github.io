@@ -24,13 +24,14 @@
       <span class="pub-authors">{{ post.authors }}</span>
       <br>
       <em>{{ post.venue }}</em>
-      {% if post.paperurl or post.codeurl or post.slidesurl or post.bibtexurl %}
+      {% if post.paperurl or post.codeurl or post.slidesurl or post.bibtexurl or post.first_author %}
         <br>
         <span class="pub-links">
+          {% if post.first_author %}<span class="pub-badge">first author</span>{% endif %}
           {% if post.paperurl %}<a href="{{ post.paperurl }}">paper</a>{% endif %}
-          {% if post.codeurl %}/ <a href="{{ post.codeurl }}">code</a>{% endif %}
-          {% if post.slidesurl %}/ <a href="{{ post.slidesurl }}">slides</a>{% endif %}
-          {% if post.bibtexurl %}/ <a href="{{ post.bibtexurl }}">bibtex</a>{% endif %}
+          {% if post.codeurl %}<a href="{{ post.codeurl }}">code</a>{% endif %}
+          {% if post.slidesurl %}<a href="{{ post.slidesurl }}">slides</a>{% endif %}
+          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">bibtex</a>{% endif %}
         </span>
       {% endif %}
     </div>

@@ -4,6 +4,7 @@ image: "pubs/lave.png"
 authors: "<strong>Oscar Mañas</strong>, Benno Krojer, Aishwarya Agrawal"
 collection: publications
 venue: "AAAI 2024"
+first_author: true
 sort_date: 202310
 year: 2024
 paperurl: "https://arxiv.org/abs/2310.02567"

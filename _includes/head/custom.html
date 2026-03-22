@@ -160,6 +160,24 @@ code, pre {
   font-style: normal;
   font-weight: 400;
 }
+/* First-author badge */
+.pub-badge {
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 500;
+  padding: 0.15em 0.55em;
+  border-radius: 3px;
+  background: rgba(135, 141, 248, 0.15);
+  border: 1px solid rgba(135, 141, 248, 0.5);
+  color: #878df8;
+  margin-right: 0.3em;
+}
+html:not([data-theme="dark"]) .pub-badge {
+  background: rgba(74, 79, 208, 0.08);
+  border-color: rgba(74, 79, 208, 0.4);
+  color: #4a4fd0;
+}
+
 /* Pill-style links */
 .pub-links a {
   display: inline-block;

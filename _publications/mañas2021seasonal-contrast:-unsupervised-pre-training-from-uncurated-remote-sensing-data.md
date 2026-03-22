@@ -4,6 +4,7 @@ image: "pubs/seco.png"
 authors: "<strong>Oscar Mañas</strong>, Alexandre Lacoste, Xavier Giró-i-Nieto, David Vázquez, Pau Rodríguez"
 collection: publications
 venue: "ICCV 2021"
+first_author: true
 sort_date: 202103
 year: 2021
 paperurl: "https://arxiv.org/abs/2103.16607"
