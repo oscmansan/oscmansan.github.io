@@ -42,19 +42,22 @@ code, pre {
 }
 
 /* Author sidebar polish */
-.author__name {
+.author__name,
+.sidebar .author__name {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.6em;
 }
 .author__name a {
   text-decoration: none;
   color: inherit;
 }
-.author__bio {
-  font-size: 1em;
+.author__bio,
+.sidebar .author__bio {
+  font-size: 1.05em;
   font-weight: 400;
   opacity: 0.85;
   margin-top: 0.3em;
+  margin-bottom: 0;
 }
 .author__urls-wrapper a,
 .author__urls li {
@@ -63,7 +66,8 @@ code, pre {
 }
 /* Research keyword tags */
 .author__keywords {
-  margin-top: 0.75em;
+  margin-top: 0.8em;
+  margin-bottom: 1.2em;
   display: flex;
   flex-wrap: wrap;
   gap: 0.35em;
@@ -167,13 +171,11 @@ code, pre {
   font-weight: 500;
   padding: 0.15em 0.55em;
   border-radius: 3px;
-  background: rgba(135, 141, 248, 0.15);
   border: 1px solid rgba(135, 141, 248, 0.5);
   color: #878df8;
   margin-right: 0.3em;
 }
 html:not([data-theme="dark"]) .pub-badge {
-  background: rgba(74, 79, 208, 0.08);
   border-color: rgba(74, 79, 208, 0.4);
   color: #4a4fd0;
 }
@@ -230,23 +232,17 @@ html:not([data-theme="dark"]) .pub-badge {
 }
 
 /* CV page accents */
-/* Role/position/degree titles (first bold in each list item) */
+/* Role/position/degree/service titles (first bold in each list item) */
 .page__content li > strong:first-child {
-  color: #76caf1;
+  color: #878df8;
 }
-/* Reviewer/service category labels */
-.page__content li > strong:first-child + em,
-.page__content li > strong:first-child ~ * {
-  color: inherit;
-}
-/* Award names — golden (awards section list items have no bold, target via class) */
+/* Award names — periwinkle */
 .awards-list li {
-  color: #fae377;
+  color: #878df8;
 }
-.awards-list li .award-org {
-  color: inherit;
-  opacity: 0.75;
-  font-weight: 300;
+/* Dates — gold */
+.cv-date {
+  color: #fae377;
 }
 
 /* Light theme overrides for palette colors */
@@ -255,10 +251,10 @@ html:not([data-theme="dark"]) .pub-title a {
   color: #4a4fd0;
 }
 html:not([data-theme="dark"]) .pub-text em {
-  color: #8a6800;
+  color: #c47a00;
 }
 html:not([data-theme="dark"]) .news-list .news-date {
-  color: #8a6800;
+  color: #c47a00;
 }
 html:not([data-theme="dark"]) .pub-links a {
   color: #1a6fa8;
@@ -270,15 +266,18 @@ html:not([data-theme="dark"]) .pub-links a:hover {
 html:not([data-theme="dark"]) .page__content li > strong:first-child {
   color: #4a4fd0;
 }
+html:not([data-theme="dark"]) .awards-list li {
+  color: #4a4fd0;
+}
+html:not([data-theme="dark"]) .cv-date {
+  color: #c47a00;
+}
 html:not([data-theme="dark"]) .page__content h2 {
   border-bottom-color: rgba(74, 79, 208, 0.2);
 }
 html:not([data-theme="dark"]) .author__keyword {
   color: #2a6fa8;
   border-color: rgba(42, 111, 168, 0.35);
-}
-html:not([data-theme="dark"]) .awards-list li {
-  color: #8a6800;
 }
 </style>
 
