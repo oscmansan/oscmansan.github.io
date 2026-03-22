@@ -8,10 +8,10 @@ $(document).ready(function () {
     const use_theme = theme || localStorage.getItem("theme") || $("html").attr("data-theme");
     if (use_theme === "dark") {
       $("html").attr("data-theme", "dark");
-      $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
+      $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
     } else if (use_theme === "light") {
       $("html").removeAttr("data-theme");
-      $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
+      $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
     }
   }
   setTheme();
