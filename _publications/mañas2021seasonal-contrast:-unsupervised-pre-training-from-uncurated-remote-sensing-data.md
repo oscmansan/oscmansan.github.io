@@ -8,7 +8,7 @@ first_author: true
 sort_date: 202103
 year: 2021
 paperurl: "https://arxiv.org/abs/2103.16607"
+codeurl: "https://github.com/ServiceNow/seasonal-contrast"
 permalink: "/publication/mañas2021seasonal-contrast:-unsupervised-pre-training-from-uncurated-remote-sensing-data"
-selected: true
 excerpt: null
 ---

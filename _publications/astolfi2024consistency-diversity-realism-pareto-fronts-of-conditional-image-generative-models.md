@@ -7,6 +7,7 @@ venue: "arXiv 2024"
 sort_date: 202406
 year: 2024
 paperurl: "https://arxiv.org/abs/2406.10429"
+selected: true
 permalink: "/publication/astolfi2024consistency-diversity-realism-pareto-fronts-of-conditional-image-generative-models"
 excerpt: null
 ---

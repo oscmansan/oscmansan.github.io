@@ -33,8 +33,9 @@ author:
   keywords:
     - Multimodal Learning
     - Vision-Language Models
-    - Large Language Models
-    - Diffusion Models
+    - Visual Grounding
+    - Evaluation & Benchmarks
+    - Reward Models
     - Text-to-Image Generation
     - Video Generation
     - Controllable Generation

@@ -8,6 +8,7 @@ sort_date: 202412
 year: 2024
 paperurl: "https://arxiv.org/abs/2412.10604"
 codeurl: "https://github.com/facebookresearch/EvalGIM"
+selected: true
 permalink: "/publication/hall2024evalgim:-a-library-for-evaluating-generative-image-models"
 excerpt: null
 ---

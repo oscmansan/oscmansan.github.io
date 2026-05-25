@@ -7,7 +7,6 @@ venue: "arXiv 2025"
 sort_date: 202512
 year: 2025
 paperurl: "https://arxiv.org/abs/2512.13019"
-selected: true
 permalink: "/publication/hong2025sneakpeek"
 excerpt: null
 ---

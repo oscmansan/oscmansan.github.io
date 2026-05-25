@@ -10,6 +10,5 @@ year: 2023
 paperurl: "https://arxiv.org/abs/2210.07179"
 codeurl: "https://github.com/mair-lab/mapl"
 permalink: "/publication/mañas2022mapl:-parameter-efficient-adaptation-of-unimodal-pre-trained-models-for-vision-language-few-shot-prompting"
-selected: true
 excerpt: null
 ---
