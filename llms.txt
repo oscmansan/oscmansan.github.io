@@ -2,7 +2,7 @@
 
 > Research Scientist at Meta Superintelligence Labs (Media Generation team), Zurich.
 > Multimodal AI researcher specializing in vision-language generative models —
-> image, video, and text generation and understanding. A through-line in my work is the loop between generation, understanding, and evaluation: building reward models and metrics, and using them to steer model behavior.
+> image, video, and text generation and understanding. In practice, a through-line in my work is the loop between generation, understanding, and evaluation: building reward models and metrics, and using them to steer model behavior.
 
 ## Current Role
 

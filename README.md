@@ -4,7 +4,7 @@ Personal website of **Oscar Mañas**, Research Scientist at **Meta Superintellig
 
 ## Research
 
-I work on **multimodal vision-language generative models** — systems that understand and generate images, video, and text from multimodal inputs. A through-line in my work is the loop between generation, understanding, and evaluation: building reward models and metrics, and using them to steer model behavior.
+I work on **multimodal vision-language generative models** — systems that understand and generate images, video, and text from multimodal inputs. In practice, a through-line in my work is the loop between generation, understanding, and evaluation: building reward models and metrics, and using them to steer model behavior.
 
 **Keywords:** multimodal learning · vision-language models · visual grounding · evaluation & benchmarks · reward models · text-to-image generation · video generation · controllable generation
 
