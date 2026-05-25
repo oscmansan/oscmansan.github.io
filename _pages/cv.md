@@ -74,7 +74,7 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 ## Academic Service
 
 * **Invited Talks:** [Deep Learning Barcelona Symposium 2025](https://sites.google.com/view/dlbcn2025/program/talks) — spotlight talk ([recording](https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521))
-* **Reviewer:** CVPR 2026, CVPR 2025, ICLR 2025, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
+* **Reviewer:** CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
 * **Teaching Assistant:** Links between Computer Vision and Language, UdeM <span class="cv-date">(2023)</span>; Postgraduate AI for Deep Learning, UPC School <span class="cv-date">(2020)</span>; Summer School on Deep Learning for Vision, UPC <span class="cv-date">(2019)</span>
 
 ## Languages
