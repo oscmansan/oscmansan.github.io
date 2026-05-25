@@ -12,7 +12,7 @@ site_theme               : "dark"
 title                    : ""
 title_separator          : "-"
 name                     : &name "Oscar Mañas"
-description              : &description "Multimodal Generative AI Researcher"
+description              : &description "Multimodal AI Researcher"
 url                      : https://oscmansan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "oscmansan/oscmansan.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "Oscar Mañas-19.jpg"
   name             : "Oscar Mañas"
   pronouns         : # example: "she/her"  
-  bio              : "Multimodal Generative AI Researcher"
+  bio              : "Multimodal AI Researcher"
   location         : "Zurich, Switzerland"
   employer         : "Meta Superintelligence Labs"
   uri              : # URL
@@ -34,7 +34,7 @@ author:
     - Multimodal Learning
     - Vision-Language Models
     - Visual Grounding
-    - Evaluation & Benchmarks
+    - Evaluation Metrics
     - Reward Models
     - Text-to-Image Generation
     - Video Generation
