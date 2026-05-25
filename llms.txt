@@ -2,7 +2,7 @@
 
 > Research Scientist at Meta Superintelligence Labs (Media Generation team), Zurich.
 > Multimodal AI researcher specializing in vision-language generative models —
-> image, video, and text generation and understanding. Focus on efficiency of generative models.
+> image, video, and text generation and understanding. A through-line in my work is the loop between generation, understanding, and evaluation: building reward models and metrics, and using them to steer model behavior.
 
 ## Current Role
 
@@ -23,12 +23,12 @@ Working on generative model distillation and real-time interactive video generat
 
 ## Research Expertise
 
-- Video generation and efficient generative models
-- Multimodal vision-language generative models (image, video, text)
-- Multimodal LLMs and reward-guided decoding
-- Diffusion models, distillation, real-time generation
-- Contrastive and self-supervised representation learning
-- Vision-language alignment and evaluation
+- Multimodal learning and vision-language models
+- Visual grounding and vision-language understanding
+- Evaluation & benchmarks for vision-language systems
+- Reward models and reward-guided decoding
+- Text-to-image and video generation
+- Controllable generation
 
 ## Publications (12 papers, sorted by arXiv submission date)
 
@@ -55,9 +55,10 @@ Working on generative model distillation and real-time interactive video generat
 - Mila PhD Scholarship, Mila - Quebec AI Institute (2021)
 - Mitacs Accelerate International Grant, Mitacs Canada (2020)
 
-## Invited Talks
+## Academic Service
 
-- Spotlight talk, Deep Learning Barcelona Symposium 2025 (Dec 2025). Recording: https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521
+- Reviewer: CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
+- Invited talk, Deep Learning Barcelona Symposium 2025 (Dec 2025). Recording: https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521
 
 ## Links
 
