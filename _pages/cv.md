@@ -18,7 +18,7 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
   * Media Generation team. Working on generative model distillation and real-time interactive video generation.
 
 * **Visiting Researcher**, Meta FAIR, Montreal <span class="cv-date">(2024 -- 2025)</span>
-  * Working on multimodal vision+language understanding and generation, advised by Michal Drozdzal and Adriana Romero.
+  * Worked on multimodal vision+language understanding and generation, advised by Michal Drozdzal and Adriana Romero.
 
 * **Research Scientist Intern**, FAIR Labs, Meta AI, Montreal <span class="cv-date">(2023)</span>
   * Worked on text-conditioned image generation, advised by Adriana Romero and Michal Drozdzal.
@@ -35,10 +35,10 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 ## Industry Experience
 
 * **Computer Vision Engineer**, Mediapro R&D, Barcelona <span class="cv-date">(2019 -- 2020)</span>
-  * Real-time video analysis for automatic sports production.
+  * Worked on real-time video analysis for automatic sports production.
 
 * **Deep Learning Engineer**, Restb.ai, Barcelona <span class="cv-date">(2017 -- 2019)</span>
-  * Visual recognition problems involving real estate property images.
+  * Worked on visual recognition problems involving real estate property images.
 
 ## Education
 
