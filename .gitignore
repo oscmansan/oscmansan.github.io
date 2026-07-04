@@ -14,3 +14,6 @@ package-lock.json
 
 # Ignore the virtual environment directory for Python
 venv
+
+# Ignore local Claude Code guidance (personal tooling config, not site content)
+CLAUDE.md

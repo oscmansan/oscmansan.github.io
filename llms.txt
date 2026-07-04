@@ -7,12 +7,12 @@
 ## Current Role
 
 Research Scientist, Meta Superintelligence Labs — Media Generation team, Zürich (Oct 2025 – present)
-Working on generative model distillation and real-time interactive video generation.
+Working on generative model distillation and real-time interactive world models, delivering 10× speedups for image-editing models deployed across Meta's products.
 
 ## Previous Roles
 
-- Visiting Researcher, Meta FAIR, Montreal (Jan 2024 – 2025). Multimodal vision-language understanding and generation.
-- Research Scientist Intern, FAIR Labs, Meta AI, Montreal (Jun 2023 – 2023). Text-conditioned image generation.
+- Visiting Researcher, Meta FAIR, Montreal (Jan 2024 – 2025). Reward-guided decoding to control multimodal LLMs at inference time (ICCV 2025).
+- Research Scientist Intern, Meta FAIR, Montreal (Jun 2023 – 2023). Automatic prompt optimization (OPT2I) for text-to-image consistency (TMLR 2024).
 - Research Intern, Element AI / ServiceNow, Montreal (2020 – 2021). Data-efficient ML and self-supervised visual representation learning.
 
 ## Education
@@ -32,7 +32,7 @@ Working on generative model distillation and real-time interactive video generat
 
 ## Publications (12 papers, sorted by arXiv submission date)
 
-1. "LatentLens: Revealing Highly Interpretable Visual Tokens in LLMs" — arXiv Feb 2026. https://arxiv.org/abs/2602.00462
+1. "LatentLens: Revealing Highly Interpretable Visual Tokens in LLMs" — ICML 2026 (arXiv Feb 2026). https://arxiv.org/abs/2602.00462
 2. "SneakPeek: Future-Guided Instructional Streaming Video Generation" — arXiv Dec 2025. https://arxiv.org/abs/2512.13019
 3. "Controlling Multimodal LLMs via Reward-guided Decoding" — ICCV 2025 (accepted Jun 2025). https://arxiv.org/abs/2508.11616
 4. "Learning What Matters: Prioritized Concept Learning via Relative Error-driven Sample Selection" — CVPR 2026 (arXiv Jun 2025). https://arxiv.org/abs/2506.01085

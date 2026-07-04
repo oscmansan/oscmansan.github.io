@@ -15,16 +15,16 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 ## Research Experience
 
 * **Research Scientist**, Meta Superintelligence Labs, Zurich <span class="cv-date">(Oct 2025 -- present)</span>
-  * Media Generation team. Working on generative model distillation and real-time interactive video generation.
+  * Media Generation team. Working on generative model distillation and real-time interactive world models, delivering 10× speedups for image-editing models deployed across Meta's products.
 
 * **Visiting Researcher**, Meta FAIR, Montreal <span class="cv-date">(2024 -- 2025)</span>
-  * Worked on multimodal vision+language understanding and generation, advised by Michal Drozdzal and Adriana Romero.
+  * Developed reward-guided decoding to control multimodal LLMs at inference time (ICCV 2025), advised by Michal Drozdzal and Adriana Romero.
 
-* **Research Scientist Intern**, FAIR Labs, Meta AI, Montreal <span class="cv-date">(2023)</span>
-  * Worked on text-conditioned image generation, advised by Adriana Romero and Michal Drozdzal.
+* **Research Scientist Intern**, Meta FAIR, Montreal <span class="cv-date">(2023)</span>
+  * Built automatic prompt optimization (OPT2I) to improve text-to-image consistency (TMLR 2024), advised by Adriana Romero and Michal Drozdzal.
 
 * **Research Intern**, Element AI, Montreal <span class="cv-date">(2020 -- 2021)</span>
-  * Worked on data-efficient ML and self-supervised visual representation learning, advised by Pau Rodríguez and David Vázquez.
+  * Developed Seasonal Contrast (SeCo), a self-supervised pre-training method for remote sensing (ICCV 2021), advised by Pau Rodríguez and David Vázquez.
 
 * **Research Assistant**, Image Processing Group, UPC, Barcelona <span class="cv-date">(2018 -- 2019)</span>
   * Worked on visual representation learning for sample-efficient reinforcement learning, advised by Xavier Giró and Víctor Campos.
@@ -45,6 +45,7 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 * **Ph.D. Computer Science**, [Mila](https://mila.quebec/en/) / [Université de Montréal](https://diro.umontreal.ca/english/home/), <span class="cv-date">2021 -- 2025</span>
   * Thesis: [Towards efficient, reliable and measurable vision-language systems](https://hdl.handle.net/1866/44263)
   * Supervised by Prof. [Aishwarya Agrawal](https://www.iro.umontreal.ca/~agrawal/). GPA: 4.3/4.3.
+  * Nominated for the Dean's Honour List.
 
 * **M.Sc. Computer Vision**, [Computer Vision Center](https://www.cvc.uab.es/) / [Universitat Autònoma de Barcelona](https://www.uab.cat), <span class="cv-date">2018 -- 2020</span>
   * Rank 1/35. Grade: 9.58/10. Recognition of outstanding academic achievement.
@@ -79,4 +80,4 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 
 ## Languages
 
-* English (fluent), French (advanced, C1), Catalan (native), Spanish (native)
+* English (fluent, TOEFL 109/120), French (advanced, C1), Catalan (native), Spanish (native)

@@ -8,5 +8,6 @@ sort_date: 202506
 year: 2026
 paperurl: "https://arxiv.org/abs/2506.01085"
 permalink: "/publication/chandhok2026progress"
+selected: true
 excerpt: null
 ---
