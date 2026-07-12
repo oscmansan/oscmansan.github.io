@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "dark"
-title                    : ""
+title                    : "Oscar Mañas"
 title_separator          : "-"
 name                     : &name "Oscar Mañas"
-description              : &description "Multimodal AI Researcher"
+description              : &description "Oscar Mañas — Research Scientist at Meta Superintelligence Labs working on multimodal vision-language generative models: image, video, and text generation."
 url                      : https://oscmansan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "oscmansan/oscmansan.github.io"
@@ -121,12 +121,12 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
 # SEO Related
-google_site_verification :
+google_site_verification : "LPL1QPHaKt4bTmALLoql0vPv5owQftGOoTgM2KoVJTE"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -134,12 +134,12 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "oscmansan"
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "Oscar Mañas-19.jpg"
+og_image                 : "og-image.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

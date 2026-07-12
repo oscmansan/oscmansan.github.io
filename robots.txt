@@ -1,0 +1,19 @@
+# oscmansan.github.io
+# All crawlers are welcome, including AI / LLM crawlers used by assistants and
+# AI search (e.g. GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, anthropic-ai,
+# PerplexityBot, Google-Extended, Applebot-Extended). They match the rule below.
+#
+# The Disallow entries are unfinished template pages with no real content; they
+# are kept in the repo for future use but should not be crawled or indexed.
+
+User-agent: *
+Disallow: /talks/
+Disallow: /teaching/
+Disallow: /portfolio/
+Disallow: /categories/
+Disallow: /tags/
+Disallow: /year-archive/
+Disallow: /page-archive/
+Disallow: /collection-archive/
+
+Sitemap: https://oscmansan.github.io/sitemap.xml

@@ -12,7 +12,7 @@ Hola! I'm Oscar Mañas. I'm a **Research Scientist at [Meta Superintelligence La
 
 My research explores the intersection of vision and language, with a focus on **multimodal vision-language generative models**: systems capable of generating images, videos and text from multimodal inputs. I'm especially interested in building models that reason fluidly across modalities, treating them as complementary channels of perception and thought. In practice, a through-line in my work is the loop between **generation, understanding, and evaluation**: building reward models and metrics, and using them to steer model behavior.
 
-Previously, I was a Visiting Researcher at [Meta FAIR](https://ai.meta.com/research/) and a Research Intern at [Element AI](https://www.elementai.com/research). See my [CV](/cv/) for more details.
+Previously, I was a Visiting Researcher at [Meta FAIR](https://ai.meta.com/research/) and a Research Intern at [Element AI](https://www.elementai.com/research). My work has been published at CVPR, ICML, ICCV, AAAI, EACL, and TMLR — see my [CV](/cv/) for more details.
 
 ## News
 
