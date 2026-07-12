@@ -12,7 +12,7 @@ redirect_from:
 
 For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 
-## Research Experience
+## Experience
 
 * **Research Scientist**, Meta Superintelligence Labs, Zurich <span class="cv-date">(Oct 2025 -- present)</span>
   * Media Generation team. Working on generative model distillation and real-time interactive world models, delivering 10× speedups for image-editing models deployed across Meta's products.
@@ -26,19 +26,17 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 * **Research Intern**, Element AI, Montreal <span class="cv-date">(2020 -- 2021)</span>
   * Developed Seasonal Contrast (SeCo), a self-supervised pre-training method for remote sensing, improving land-cover classification by +8 mAP over ImageNet pre-training and matching full-label accuracy with 100× fewer labels (ICCV 2021; 500+ citations), advised by Pau Rodríguez and David Vázquez.
 
-* **Research Assistant**, Image Processing Group, UPC, Barcelona <span class="cv-date">(2018 -- 2019)</span>
-  * Researched self-supervised visual representations for sample-efficient reinforcement learning, advised by Xavier Giró and Víctor Campos.
-
-* **Research Assistant**, Architectures and Compilers Group, UPC, Barcelona <span class="cv-date">(2016 -- 2017)</span>
-  * Optimized deep neural networks for real-time inference on power-constrained edge devices (Nvidia Jetson TX1), achieving a 1.55× speedup, 31% lower energy, and an 86% smaller memory footprint, advised by Antonio González and José María Arnau.
-
-## Industry Experience
-
 * **Computer Vision Engineer**, Mediapro R&D, Barcelona <span class="cv-date">(2019 -- 2020)</span>
   * Built real-time video analysis pipelines for automatic sports production, deployed in live broadcast.
 
+* **Research Assistant**, Image Processing Group, UPC, Barcelona <span class="cv-date">(2018 -- 2019)</span>
+  * Researched self-supervised visual representations for sample-efficient reinforcement learning, advised by Xavier Giró and Víctor Campos.
+
 * **Deep Learning Engineer**, Restb.ai, Barcelona <span class="cv-date">(2017 -- 2019)</span>
   * Built and deployed production visual-recognition models for real-estate property imagery at scale.
+
+* **Research Assistant**, Architectures and Compilers Group, UPC, Barcelona <span class="cv-date">(2016 -- 2017)</span>
+  * Optimized deep neural networks for real-time inference on power-constrained edge devices (Nvidia Jetson TX1), achieving a 1.55× speedup, 31% lower energy, and an 86% smaller memory footprint, advised by Antonio González and José María Arnau.
 
 ## Education
 
