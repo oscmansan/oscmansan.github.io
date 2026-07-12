@@ -18,27 +18,27 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
   * Media Generation team. Working on generative model distillation and real-time interactive world models, delivering 10× speedups for image-editing models deployed across Meta's products.
 
 * **Visiting Researcher**, Meta FAIR, Montreal <span class="cv-date">(2024 -- 2025)</span>
-  * Developed reward-guided decoding to control multimodal LLMs at inference time (ICCV 2025), advised by Michal Drozdzal and Adriana Romero.
+  * Developed reward-guided decoding to control multimodal LLMs at inference time, cutting object hallucination by ~70% at 6× the sample-efficiency of rejection sampling (ICCV 2025), advised by Michal Drozdzal and Adriana Romero.
 
 * **Research Scientist Intern**, Meta FAIR, Montreal <span class="cv-date">(2023)</span>
-  * Built automatic prompt optimization (OPT2I) to improve text-to-image consistency (TMLR 2024), advised by Adriana Romero and Michal Drozdzal.
+  * Built automatic prompt optimization (OPT2I) that improved text-to-image consistency by up to 25% while preserving image quality (TMLR 2024, Featured Certification), advised by Adriana Romero and Michal Drozdzal.
 
 * **Research Intern**, Element AI, Montreal <span class="cv-date">(2020 -- 2021)</span>
-  * Developed Seasonal Contrast (SeCo), a self-supervised pre-training method for remote sensing (ICCV 2021), advised by Pau Rodríguez and David Vázquez.
+  * Developed Seasonal Contrast (SeCo), a self-supervised pre-training method for remote sensing, improving land-cover classification by +8 mAP over ImageNet pre-training and matching full-label accuracy with 100× fewer labels (ICCV 2021; 500+ citations), advised by Pau Rodríguez and David Vázquez.
 
 * **Research Assistant**, Image Processing Group, UPC, Barcelona <span class="cv-date">(2018 -- 2019)</span>
-  * Worked on visual representation learning for sample-efficient reinforcement learning, advised by Xavier Giró and Víctor Campos.
+  * Researched self-supervised visual representations for sample-efficient reinforcement learning, advised by Xavier Giró and Víctor Campos.
 
 * **Research Assistant**, Architectures and Compilers Group, UPC, Barcelona <span class="cv-date">(2016 -- 2017)</span>
-  * Worked on efficient cognitive computing to run deep neural networks on edge devices, advised by Antonio González and José María Arnau.
+  * Optimized deep neural networks for real-time inference on power-constrained edge devices (Nvidia Jetson TX1), achieving a 1.55× speedup, 31% lower energy, and an 86% smaller memory footprint, advised by Antonio González and José María Arnau.
 
 ## Industry Experience
 
 * **Computer Vision Engineer**, Mediapro R&D, Barcelona <span class="cv-date">(2019 -- 2020)</span>
-  * Worked on real-time video analysis for automatic sports production.
+  * Built real-time video analysis pipelines for automatic sports production, deployed in live broadcast.
 
 * **Deep Learning Engineer**, Restb.ai, Barcelona <span class="cv-date">(2017 -- 2019)</span>
-  * Worked on visual recognition problems involving real estate property images.
+  * Built and deployed production visual-recognition models for real-estate property imagery at scale.
 
 ## Education
 
@@ -64,18 +64,16 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 
 ## Selected Awards
 
-* **J. Armand Bombardier Excellence Grant**, Université de Montréal <span class="cv-date">(2024, 2025)</span>
-* **Artificial Intelligence Grant**, Université de Montréal <span class="cv-date">(2024)</span>
-* **DIRO Excellence Grant**, Université de Montréal <span class="cv-date">(2023, 2024)</span>
-* **J.A. DeSève Excellence Grant**, Université de Montréal <span class="cv-date">(2022)</span>
+* **Graduate Excellence Scholarships**, Université de Montréal (J. Armand Bombardier, DIRO, J.A. DeSève, and Artificial Intelligence funds) <span class="cv-date">(2022, 2023, 2024, 2025)</span>
 * **National End-of-Degree Award in University Education**, Spanish Ministry of Education <span class="cv-date">(2021)</span>
 * **Mila PhD Scholarship**, Mila - Quebec AI Institute <span class="cv-date">(2021)</span>
+* **McGill Engineering Doctoral Award** (declined), Faculty of Engineering, McGill University <span class="cv-date">(2021)</span>
 * **Mitacs Accelerate International Grant**, Mitacs Canada <span class="cv-date">(2020)</span>
 
 ## Academic Service
 
 * **Invited Talks:** [Deep Learning Barcelona Symposium 2025](https://sites.google.com/view/dlbcn2025/program/talks) — spotlight talk ([recording](https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521))
-* **Reviewer:** CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
+* **Reviewer:** CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, MAIS 2024, EMNLP 2024, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
 * **Teaching Assistant:** Links between Computer Vision and Language, UdeM <span class="cv-date">(2023)</span>; Postgraduate AI for Deep Learning, UPC School <span class="cv-date">(2020)</span>; Summer School on Deep Learning for Vision, UPC <span class="cv-date">(2019)</span>
 
 ## Languages

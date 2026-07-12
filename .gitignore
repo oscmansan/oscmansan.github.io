@@ -17,3 +17,7 @@ venv
 
 # Ignore local Claude Code guidance (personal tooling config, not site content)
 CLAUDE.md
+
+# Ignore local bundler install (gems + config)
+vendor/
+.bundle/
