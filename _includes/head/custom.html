@@ -221,6 +221,12 @@ html:not([data-theme="dark"]) .pub-badge {
 }
 
 /* Masthead/nav polish */
+/* Hide the nav brand (name is always shown in the sidebar). site.title stays set,
+   so the <title>/og:title tags remain populated. !important overrides the theme's
+   more-specific rule that sets display: table-cell on this item. */
+.masthead__menu-item--lg {
+  display: none !important;
+}
 .masthead {
   border-bottom: 1px solid var(--global-border-color, #243040);
 }
