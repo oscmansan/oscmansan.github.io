@@ -103,6 +103,11 @@ code, pre {
   color: #fae377;
   margin-right: 0.8em;
 }
+/* Venue in bold. Explicit weight needed because the default `bolder`
+   only resolves to 400 against the light (300) news text. */
+.news-list li strong {
+  font-weight: 700;
+}
 
 /* Section headings */
 .page__content h2,
