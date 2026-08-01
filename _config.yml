@@ -223,7 +223,10 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   publications:
-    output: true
+    # output: false — no per-paper pages. Titles link straight to arXiv, so the
+    # generated detail pages were blank and orphaned. The collection is still
+    # available as data (site.publications) for the listing and homepage.
+    output: false
     permalink: /:collection/:path/
 
 
