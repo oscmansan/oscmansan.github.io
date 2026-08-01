@@ -1,31 +1,31 @@
 /* ==========================================================================
-   DEFAULT (LIGHT) THEME — same hue family as dark theme
+   DEFAULT (LIGHT) THEME — warm paper + ink + one ink-blue accent
    ========================================================================== */
 
-/* Color palette — teal-navy family */
-$text                       : #282b35;
-$text-muted                 : #777777;
-$link                       : #2a6fa8;
-$border                     : #e0e4ed;
-$surface                    : #f2f3f7;
+/* Color palette — warm neutral family */
+$text                       : #1F1C19;
+$text-muted                 : #6A665F;
+$link                       : #2C4A8A;
+$border                     : #E2DFD8;
+$surface                    : #EFEDE7;
 
 /* Kept for compatibility with theme mixins */
-$gray                       : #777777;
-$dark-gray                  : #3d4150;
-$darker-gray                : #282b35;
-$light-gray                 : #9a9eaa;
-$lighter-gray               : #e0e4ed;
+$gray                       : #6A665F;
+$dark-gray                  : #3A3630;
+$darker-gray                : #1F1C19;
+$light-gray                 : #8A867E;
+$lighter-gray               : #E2DFD8;
 
 /* Status colors */
-$danger-color               : #c0392b;
-$info-color                 : #1a8080;
-$notice-color               : #5e6e7a;
-$success-color              : #4a7c40;
-$warning-color              : #d48a00;
+$danger-color               : #A33A2B;
+$info-color                 : #2C4A8A;
+$notice-color               : #6A665F;
+$success-color              : #4C6135;
+$warning-color              : #8A6410;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 3px rgba(30, 43, 54, 0.1);
+$border-radius              : 0;
+$box-shadow                 : 0 1px 3px rgba(31, 28, 25, 0.08);
 $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 70px;
 $navicon-width              : 28px;
@@ -35,15 +35,16 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Default light theme for the site */
 :root {
+    color-scheme                        : light;
     --global-base-color                 : #{$text-muted};
-    --global-bg-color                   : #ffffff;
+    --global-bg-color                   : #F4F2EE;
     --global-border-color               : #{$border};
-    --global-code-background-color      : #{$surface};
+    --global-code-background-color      : #FCFAF6;
     --global-code-text-color            : #{$text};
     --global-fig-caption-color          : #{$text-muted};
     --global-link-color                 : #{$link};
     --global-link-color-hover           : mix(#000, $link, 20%);
-    --global-link-color-visited         : mix(#fff, $link, 20%);
+    --global-link-color-visited         : #{$link};
     --global-masthead-link-color        : #{$text};
     --global-masthead-link-color-hover  : #{$link};
     --global-text-color                 : #{$text};

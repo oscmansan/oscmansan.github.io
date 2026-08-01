@@ -4,7 +4,7 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<div itemscope itemtype="http://schema.org/Person">
+<aside itemscope itemtype="http://schema.org/Person" aria-label="About Oscar Mañas">
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
@@ -162,5 +162,12 @@
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}      
     </ul>
+
+    {% if author.linkedin %}
+      <a class="author__contact" href="https://www.linkedin.com/in/{{ author.linkedin }}"
+         aria-label="Contact {{ author.name }} on LinkedIn">
+        <i class="fa-regular fa-envelope" aria-hidden="true"></i>Contact
+      </a>
+    {% endif %}
   </div>
-</div>
+</aside>

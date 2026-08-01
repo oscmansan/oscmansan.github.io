@@ -1,13 +1,17 @@
 # Oscar Mañas
 
-> Research Scientist at Meta Superintelligence Labs (Media Generation team), Zurich.
-> Multimodal AI researcher specializing in vision-language generative models —
-> image, video, and text generation and understanding. In practice, a through-line in my work is the loop between generation, understanding, and evaluation: building reward models and metrics, and using them to steer model behavior.
+> Research Scientist at Meta, Zurich, working on multimodal AI.
+> Vision-language generative models — image, video, and text generation and
+> understanding. A through-line in my work is the loop between generation,
+> understanding, and evaluation: building reward models and metrics, and using
+> them to steer model behavior.
+
+Name: Oscar Mañas (also written Oscar Manas). Cite as: Mañas, O.
 
 ## Current Role
 
-Research Scientist, Meta Superintelligence Labs — Media Generation team, Zürich (Oct 2025 – present)
-Working on generative model distillation and real-time interactive world models, delivering 10× speedups for image-editing models deployed across Meta's products.
+Research Scientist, Meta — Multimodal AI, Zürich (Oct 2025 – present)
+Generative model distillation and real-time interactive world models, delivering 10× speedups for image-editing models deployed across Meta's products.
 
 ## Previous Roles
 
@@ -45,24 +49,31 @@ Working on generative model distillation and real-time interactive world models,
 11. "Seasonal Contrast: Unsupervised Pre-Training from Uncurated Remote Sensing Data" — ICCV 2021. https://arxiv.org/abs/2103.16607
 12. "A Weakly Supervised Consistency-based Learning Method for COVID-19 Segmentation in CT Images" — WACV 2021. https://arxiv.org/abs/2007.02180
 
+First-author papers: #3, #8, #9, #10, #11.
+
 ## Selected Awards
 
-- J. Armand Bombardier Excellence Grant, Université de Montréal (2024, 2025)
-- Artificial Intelligence Grant, Université de Montréal (2024)
-- DIRO Excellence Grant, Université de Montréal (2023, 2024)
-- J.A. DeSève Excellence Grant, Université de Montréal (2022)
+- Graduate Excellence Scholarships, Université de Montréal (J. Armand Bombardier, DIRO, J.A. DeSève, and Artificial Intelligence funds) (2022, 2023, 2024, 2025)
 - National End-of-Degree Award in University Education, Spanish Ministry of Education (2021)
 - Mila PhD Scholarship, Mila - Quebec AI Institute (2021)
+- McGill Engineering Doctoral Award (declined), Faculty of Engineering, McGill University (2021)
 - Mitacs Accelerate International Grant, Mitacs Canada (2020)
 
 ## Academic Service
 
-- Reviewer: CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
+- Reviewer: CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, MAIS 2024, EMNLP 2024, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
 - Invited talk, Deep Learning Barcelona Symposium 2025 (Dec 2025). Recording: https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521
+
+## Contact
+
+Preferred: LinkedIn message — https://www.linkedin.com/in/oscmansan
 
 ## Links
 
 - Website: https://oscmansan.github.io
+- News: https://oscmansan.github.io/news/
+- Publications: https://oscmansan.github.io/publications/
+- CV: https://oscmansan.github.io/cv/
 - Google Scholar: https://scholar.google.com/citations?user=Crn-tf0AAAAJ
 - LinkedIn: https://www.linkedin.com/in/oscmansan
 - GitHub: https://github.com/oscmansan

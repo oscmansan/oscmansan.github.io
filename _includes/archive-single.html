@@ -28,14 +28,26 @@
         <br>
         <span class="pub-links">
           {% if post.first_author %}<span class="pub-badge">first author</span>{% endif %}
-          {% if post.paperurl %}<a href="{{ post.paperurl }}">paper</a>{% endif %}
-          {% if post.codeurl %}<a href="{{ post.codeurl }}">code</a>{% endif %}
-          {% if post.slidesurl %}<a href="{{ post.slidesurl }}">slides</a>{% endif %}
-          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">bibtex</a>{% endif %}
+          {% if post.paperurl %}<a href="{{ post.paperurl }}" aria-label="Paper: {{ title | strip_html }}">paper</a>{% endif %}
+          {% if post.codeurl %}<a href="{{ post.codeurl }}" aria-label="Code: {{ title | strip_html }}">code</a>{% endif %}
+          {% if post.slidesurl %}<a href="{{ post.slidesurl }}" aria-label="Slides: {{ title | strip_html }}">slides</a>{% endif %}
+          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" aria-label="BibTeX: {{ title | strip_html }}">bibtex</a>{% endif %}
         </span>
       {% endif %}
     </div>
   </div>
+  {%- comment -%} Machine-readable record of the same entry {%- endcomment -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": {{ title | strip_html | jsonify }},
+    "author": {{ post.authors | strip_html | split: ", " | jsonify }},
+    "datePublished": "{{ post.year }}",
+    "publication": {{ post.venue | jsonify }}{% if post.paperurl %},
+    "sameAs": {{ post.paperurl | jsonify }}{% endif %}
+  }
+  </script>
 {% else %}
   {%- comment -%} Default layout for non-publication entries {%- endcomment -%}
   <div class="{{ include.type | default: "list" }}__item">

@@ -2,6 +2,17 @@
 
 <!-- start custom head snippets -->
 
+<!-- Theme: system preference first, explicit choice wins. Must run before paint. -->
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (saved === "dark" || (!saved && prefersDark)) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
+
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
 <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
@@ -9,13 +20,14 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#282b35"/>
+<meta name="theme-color" content="#F4F2EE" media="(prefers-color-scheme: light)"/>
+<meta name="theme-color" content="#2B2926" media="(prefers-color-scheme: dark)"/>
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
 <!-- Web fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;700&family=Google+Sans+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Hanken+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -23,14 +35,25 @@
 
 <!-- Custom styles -->
 <style>
-/* Typography override */
+/* ==========================================================================
+   Type
+   ========================================================================== */
 body {
+  font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  letter-spacing: -0.011em;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.page__content p,
+.page__content > ul > li {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.28em;
+  line-height: 1.6;
+  text-wrap: pretty;
 }
 h1, h2, h3 {
-  font-weight: 700;
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 400;
   letter-spacing: -0.02em;
 }
 h4, h5, h6 {
@@ -38,14 +61,43 @@ h4, h5, h6 {
   letter-spacing: -0.01em;
 }
 code, pre {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-weight: 400;
 }
 
-/* Author sidebar polish */
+/* Section headings: mono label, no rule */
+.page__content h2,
+.archive h2 {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-top: 3.5em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   Author sidebar
+   ========================================================================== */
+.sidebar .author__avatar img {
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  width: 100%;
+  height: 196px;
+  object-fit: cover;
+  object-position: center 6%;
+}
 .author__name,
 .sidebar .author__name {
-  font-weight: 700;
-  font-size: 1.6em;
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 400;
+  font-size: 2.1em;
+  letter-spacing: -0.02em;
 }
 .author__name a {
   text-decoration: none;
@@ -53,161 +105,338 @@ code, pre {
 }
 .author__bio,
 .sidebar .author__bio {
-  font-size: 1.05em;
+  font-size: 0.97em;
   font-weight: 400;
-  opacity: 0.85;
-  margin-top: 0.3em;
+  opacity: 1;
+  color: var(--global-text-color-light);
+  margin-top: 0.4em;
   margin-bottom: 0;
 }
 .author__urls-wrapper a,
 .author__urls li {
-  font-size: 0.95em;
+  font-size: 0.94em;
   font-weight: 400;
 }
+.author__urls a {
+  color: var(--global-link-color);
+  text-decoration: none;
+  border-bottom: 1px solid;
+  border-color: color-mix(in srgb, var(--global-link-color) 35%, transparent);
+}
+
+/* Contact button */
+.author__contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.4em;
+  padding: 9px 15px;
+  border: 1px solid var(--global-text-color);
+  color: var(--global-text-color);
+  font-size: 0.88em;
+  font-weight: 500;
+  text-decoration: none;
+}
+.author__contact:hover {
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+  text-decoration: none;
+}
+
 /* Research keyword tags */
 .author__keywords {
-  margin-top: 0.8em;
+  margin-top: 0.9em;
   margin-bottom: 1.2em;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35em;
+  gap: 8px;
 }
 .author__keyword {
-  font-size: 0.72em;
-  font-weight: 500;
-  padding: 0.2em 0.6em;
-  border-radius: 3px;
-  border: 1px solid rgba(118, 202, 241, 0.35);
-  color: #76caf1;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  padding: 5px 11px;
+  border-radius: 0;
+  border: 1px solid var(--global-border-color);
+  background: var(--global-thead-color);
+  color: var(--global-text-color-light);
   white-space: nowrap;
 }
 
-/* News section — bullet list */
+/* ==========================================================================
+   News — vertical timeline
+   ========================================================================== */
 .news-list ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 0.5em;
+  margin: 0.5em 0 0 84px;
+  border-left: 1px solid var(--global-border-color);
 }
 .news-list li {
-  padding: 0.35em 0;
-  line-height: 1.6;
-  font-weight: 300;
-  border-bottom: 1px solid var(--global-border-color, #243040);
+  position: relative;
+  padding: 10px 0 22px 30px;
+  line-height: 1.55;
+  font-weight: 400;
+  border-bottom: none;
 }
 .news-list li:last-child {
-  border-bottom: none;
+  padding-bottom: 0;
 }
+/* Marker */
+.news-list li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 15px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--global-bg-color);
+  border: 2px solid var(--global-link-color);
+  box-sizing: border-box;
+}
+/* Date sits left of the rail */
 .news-list .news-date {
-  font-weight: 500;
-  font-size: 0.85em;
-  color: #fae377;
-  margin-right: 0.8em;
+  position: absolute;
+  left: -114px;
+  width: 84px;
+  text-align: right;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75em;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+  margin-right: 0;
 }
-/* Venue in bold. Explicit weight needed because the default `bolder`
-   only resolves to 400 against the light (300) news text. */
+/* Explicit weight: `bolder` under a light body weight resolves too low. */
 .news-list li strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
-/* Section headings */
-.page__content h2,
-.archive h2 {
-  font-size: 1.3em;
-  margin-top: 2em;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid rgba(118, 202, 241, 0.25);
-}
-
-/* Barron-style publication entries */
+/* ==========================================================================
+   Publication entries
+   ========================================================================== */
 .pub-entry {
   display: flex;
-  gap: 1.2em;
-  padding: 0.8em 0;
-  border-bottom: 1px solid var(--global-border-color, #243040);
-}
-.pub-entry:last-child {
-  border-bottom: none;
+  gap: 20px;
+  padding: 18px;
+  margin-bottom: 14px;
+  background: var(--global-code-background-color);
+  border: 1px solid var(--global-border-color);
 }
 .pub-image {
-  flex: 0 0 160px;
-  max-width: 160px;
+  flex: 0 0 150px;
+  max-width: 150px;
 }
 .pub-image img {
   width: 100%;
-  height: 120px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0;
   background: #ffffff;
 }
 .pub-text {
   flex: 1;
-  font-size: 0.92em;
-  font-weight: 300;
-  line-height: 1.55;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 0.94em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* Venue first, above the title */
+.pub-text em {
+  order: -1;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-link-color);
+}
+.pub-text br {
+  display: none;
 }
 .pub-title {
-  font-weight: 500;
-  color: #878df8;
+  margin-top: 6px;
+  font-weight: 400;
 }
+.pub-title,
 .pub-title a {
-  color: #878df8;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.4em;
+  line-height: 1.3;
+  color: var(--global-text-color);
   text-decoration: none;
 }
 .pub-title a:hover {
   text-decoration: underline;
 }
 .pub-authors {
-  font-size: 0.9em;
-  font-weight: 300;
+  margin-top: 6px;
+  font-size: 0.93em;
+  font-weight: 400;
+  color: var(--global-text-color-light);
 }
-/* Author's own name — bold only, no color (sidebar already identifies the site owner) */
 .pub-authors strong {
   font-weight: 500;
-}
-/* Venue name in golden */
-.pub-text em {
-  color: #fae377;
-  font-style: normal;
-  font-weight: 400;
+  color: var(--global-text-color);
 }
 /* First-author badge */
 .pub-badge {
   display: inline-block;
-  font-size: 0.75em;
-  font-weight: 500;
-  padding: 0.15em 0.55em;
-  border-radius: 3px;
-  border: 1px solid rgba(135, 141, 248, 0.5);
-  color: #878df8;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78em;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 0;
+  border: 1px solid var(--global-border-color);
+  color: var(--global-text-color-light);
   margin-right: 0.3em;
 }
-html:not([data-theme="dark"]) .pub-badge {
-  border-color: rgba(74, 79, 208, 0.4);
-  color: #4a4fd0;
+/* Resource links: plain text, not pills */
+.pub-links {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9em;
 }
-
-/* Pill-style links */
 .pub-links a {
-  display: inline-block;
-  font-size: 0.8em;
-  font-weight: 400;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin-right: 0;
+  color: var(--global-link-color);
   text-decoration: none;
-  padding: 0.1em 0.55em;
-  border-radius: 3px;
-  border: 1px solid rgba(118, 202, 241, 0.4);
-  color: #76caf1;
-  margin-right: 0.25em;
 }
 .pub-links a:hover {
-  border-color: #76caf1;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-/* Responsive: stack on mobile */
+/* ==========================================================================
+   CV — one aligned ledger for every section
+   ========================================================================== */
+.cv-grid {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  column-gap: 24px;
+  row-gap: 14px;
+  font-size: 0.97em;
+  line-height: 1.6;
+}
+.cv-grid dt,
+.cv-date {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  padding-top: 3px;
+}
+.cv-grid dd {
+  margin: 0;
+}
+.page__content li > strong:first-child,
+.archive li > strong:first-child {
+  color: var(--global-text-color);
+}
+
+/* ==========================================================================
+   Masthead + theme switch
+   ========================================================================== */
+/* Hide the nav brand (name is always shown in the sidebar). site.title stays set,
+   so the <title>/og:title tags remain populated. */
+.masthead__menu-item--lg {
+  display: none !important;
+}
+.masthead {
+  border-bottom: 1px solid var(--global-border-color);
+}
+.greedy-nav .visible-links a {
+  font-weight: 400;
+  font-size: 0.95em;
+}
+/* Current page */
+.greedy-nav .visible-links a[aria-current="page"] {
+  color: var(--global-text-color);
+  border-bottom: 1px solid var(--global-link-color);
+  padding-bottom: 2px;
+}
+
+.theme-switch {
+  position: relative;
+  display: block;
+  width: 54px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--global-border-color);
+  border-radius: 13px;
+  background: var(--global-thead-color);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.theme-switch__knob {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--global-link-color);
+  transition: left 0.18s ease;
+}
+html[data-theme="dark"] .theme-switch__knob {
+  left: 30px;
+}
+.theme-switch i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  line-height: 1;
+}
+.theme-switch .fa-sun  { left: 14px; color: var(--global-bg-color); }
+.theme-switch .fa-moon { left: 40px; color: var(--global-text-color-light); }
+html[data-theme="dark"] .theme-switch .fa-sun  { color: var(--global-text-color-light); }
+html[data-theme="dark"] .theme-switch .fa-moon { color: var(--global-bg-color); }
+
+/* Button style */
+.btn--inverse {
+  border: 1px solid var(--global-border-color);
+  border-radius: 0;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 1023px) {
+  /* Timeline collapses: date goes inline, rail keeps the left edge */
+  .news-list ul {
+    margin-left: 0;
+  }
+  .news-list .news-date {
+    position: static;
+    display: block;
+    width: auto;
+    text-align: left;
+    margin-bottom: 2px;
+  }
+  .author__bio {
+    font-size: 0.92em;
+  }
+}
+
 @media (max-width: 600px) {
   .pub-entry {
     flex-direction: column;
-    gap: 0.6em;
+    gap: 14px;
   }
   .pub-image {
     flex: none;
@@ -217,81 +446,13 @@ html:not([data-theme="dark"]) .pub-badge {
     height: auto;
     max-height: 180px;
   }
-}
-
-@media (max-width: 1023px) {
-  .author__bio {
-    font-size: 0.9em;
+  .cv-grid {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
   }
-}
-
-/* Masthead/nav polish */
-/* Hide the nav brand (name is always shown in the sidebar). site.title stays set,
-   so the <title>/og:title tags remain populated. !important overrides the theme's
-   more-specific rule that sets display: table-cell on this item. */
-.masthead__menu-item--lg {
-  display: none !important;
-}
-.masthead {
-  border-bottom: 1px solid var(--global-border-color, #243040);
-}
-.greedy-nav a.site-title {
-  font-weight: 700;
-}
-.greedy-nav .visible-links a {
-  font-weight: 500;
-}
-
-/* Button style */
-.btn--inverse {
-  border: 1px solid var(--global-border-color, #243040);
-  font-size: 0.85em;
-  font-weight: 500;
-}
-
-/* CV page accents */
-/* Role/position/degree/service titles (first bold in each list item) */
-.page__content li > strong:first-child,
-.archive li > strong:first-child {
-  color: #878df8;
-}
-/* Dates — gold */
-.cv-date {
-  color: #fae377;
-}
-
-/* Light theme overrides for palette colors */
-html:not([data-theme="dark"]) .pub-title,
-html:not([data-theme="dark"]) .pub-title a {
-  color: #4a4fd0;
-}
-html:not([data-theme="dark"]) .pub-text em {
-  color: #d48a00;
-}
-html:not([data-theme="dark"]) .news-list .news-date {
-  color: #d48a00;
-}
-html:not([data-theme="dark"]) .pub-links a {
-  color: #1a6fa8;
-  border-color: rgba(26, 111, 168, 0.4);
-}
-html:not([data-theme="dark"]) .pub-links a:hover {
-  border-color: #1a6fa8;
-}
-html:not([data-theme="dark"]) .page__content li > strong:first-child,
-html:not([data-theme="dark"]) .archive li > strong:first-child {
-  color: #4a4fd0;
-}
-html:not([data-theme="dark"]) .cv-date {
-  color: #d48a00;
-}
-html:not([data-theme="dark"]) .page__content h2,
-html:not([data-theme="dark"]) .archive h2 {
-  border-bottom-color: rgba(74, 79, 208, 0.2);
-}
-html:not([data-theme="dark"]) .author__keyword {
-  color: #2a6fa8;
-  border-color: rgba(42, 111, 168, 0.35);
+  .cv-grid dd {
+    margin-bottom: 14px;
+  }
 }
 </style>
 

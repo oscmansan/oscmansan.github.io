@@ -2,36 +2,17 @@
 permalink: /
 title: ""
 author_profile: true
-description: "Oscar Mañas — Research Scientist at Meta Superintelligence Labs working on multimodal generative AI, vision-language models, and text-to-image/video generation."
+description: "Oscar Mañas — Research Scientist at Meta working on multimodal AI: vision-language models, and image, video and text generation."
 redirect_from:
   - /about/
   - /about.html
 ---
 
-Hola! I'm Oscar Mañas. I'm a **Research Scientist at [Meta Superintelligence Labs](https://ai.meta.com/)** on the Media Generation team in Zurich. I recently completed my PhD at [Mila](https://mila.quebec/en/) and [Université de Montréal](https://diro.umontreal.ca/english/home/), advised by Prof. [Aishwarya Agrawal](https://www.iro.umontreal.ca/~agrawal/).
+Hola! I'm Oscar Mañas. I'm a **Research Scientist at [Meta](https://ai.meta.com/)** in Zurich, working on multimodal AI. I recently completed my PhD at [Mila](https://mila.quebec/en/) and [Université de Montréal](https://diro.umontreal.ca/english/home/), advised by Prof. [Aishwarya Agrawal](https://www.iro.umontreal.ca/~agrawal/).
 
-My research explores the intersection of vision and language, with a focus on **multimodal vision-language generative models**: systems capable of generating images, videos and text from multimodal inputs. I'm especially interested in building models that reason fluidly across modalities, treating them as complementary channels of perception and thought. In practice, a through-line in my work is the loop between **generation, understanding, and evaluation**: building reward models and metrics, and using them to steer model behavior.
+My research explores the intersection of vision and language, with a focus on **multimodal generative models**: systems capable of generating images, videos, text and actions from multimodal inputs. I'm especially interested in building models that reason fluidly across modalities, treating them as **complementary channels of perception, thought and interaction**. In practice, a through-line in my work is the loop between **generation, understanding, and evaluation**: building reward models and metrics, and using them to steer model behavior.
 
 Previously, I was a Visiting Researcher at [Meta FAIR](https://ai.meta.com/research/) and a Research Intern at [Element AI](https://www.elementai.com/research). My work has been published at CVPR, ICML, ICCV, AAAI, EACL, and TMLR. See my [CV](/cv/) for more details.
-
-## News
-
-<div class="news-list" markdown="0">
-<ul>
-<li><span class="news-date">May 2026</span> Paper accepted at <strong>ICML 2026</strong>: <em><a href="https://arxiv.org/abs/2602.00462">LatentLens: Revealing Highly Interpretable Visual Tokens in LLMs</a></em></li>
-<li><span class="news-date">Feb 2026</span> Paper accepted at <strong>CVPR 2026</strong>: <em><a href="https://arxiv.org/abs/2506.01085">Learning What Matters: Prioritized Concept Learning via Relative Error-driven Sample Selection</a></em></li>
-<li><span class="news-date">Feb 2026</span> PhD thesis published: <em><a href="https://hdl.handle.net/1866/44263">Towards efficient, reliable and measurable vision-language systems</a></em></li>
-<li><span class="news-date">Dec 2025</span> Preprint released: <em><a href="https://arxiv.org/abs/2512.13019">SneakPeek: Future-Guided Instructional Streaming Video Generation</a></em></li>
-<li><span class="news-date">Dec 2025</span> Spotlight talk at the <a href="https://sites.google.com/view/dlbcn2025/program/talks">Deep Learning Barcelona Symposium</a> (<a href="https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521">recording</a>)</li>
-<li><span class="news-date">Nov 2025</span> Defended my PhD thesis and graduated from Mila / Université de Montréal</li>
-<li><span class="news-date">Oct 2025</span> Started as Research Scientist at <a href="https://ai.meta.com/">Meta Superintelligence Labs</a>, Media Generation team, Zurich</li>
-<li><span class="news-date">Jun 2025</span> Paper accepted at <strong>ICCV 2025</strong>: <em><a href="https://arxiv.org/abs/2508.11616">Controlling Multimodal LLMs via Reward-guided Decoding</a></em></li>
-<li><span class="news-date">Jun 2024</span> Paper accepted at <strong>TMLR</strong>: <em><a href="https://arxiv.org/abs/2403.17804">Improving Text-to-Image Consistency via Automatic Prompt Optimization</a></em></li>
-<li><span class="news-date">Jan 2024</span> Started as Visiting Researcher at <a href="https://ai.meta.com/research/">Meta FAIR</a>, Montreal</li>
-<li><span class="news-date">Dec 2023</span> Paper accepted at <strong>AAAI 2024</strong>: <em><a href="https://arxiv.org/abs/2310.02567">Improving Automatic VQA Evaluation Using Large Language Models</a></em></li>
-<li><span class="news-date">Jun 2023</span> Started as Research Scientist Intern at <a href="https://ai.meta.com/research/">Meta FAIR</a>, Montreal</li>
-</ul>
-</div>
 
 ## Selected Publications
 
@@ -41,3 +22,18 @@ Previously, I was a Visiting Researcher at [Meta FAIR](https://ai.meta.com/resea
 {% endfor %}
 
 <a href="/publications/" class="btn btn--inverse">View all publications &rarr;</a>
+
+## News
+
+<div class="news-list" markdown="0">
+<ul>
+<li><time class="news-date" datetime="2026-05">May 2026</time> Paper accepted at <strong>ICML 2026</strong>: <em><a href="https://arxiv.org/abs/2602.00462">LatentLens: Revealing Highly Interpretable Visual Tokens in LLMs</a></em></li>
+<li><time class="news-date" datetime="2026-02">Feb 2026</time> Paper accepted at <strong>CVPR 2026</strong>: <em><a href="https://arxiv.org/abs/2506.01085">Learning What Matters: Prioritized Concept Learning via Relative Error-driven Sample Selection</a></em></li>
+<li><time class="news-date" datetime="2026-02">Feb 2026</time> PhD thesis published: <em><a href="https://hdl.handle.net/1866/44263">Towards efficient, reliable and measurable vision-language systems</a></em></li>
+<li><time class="news-date" datetime="2025-12">Dec 2025</time> Preprint released: <em><a href="https://arxiv.org/abs/2512.13019">SneakPeek: Future-Guided Instructional Streaming Video Generation</a></em></li>
+<li><time class="news-date" datetime="2025-12">Dec 2025</time> Spotlight talk at the <a href="https://sites.google.com/view/dlbcn2025/program/talks">Deep Learning Barcelona Symposium</a> (<a href="https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&amp;t=9521">recording</a>)</li>
+<li><time class="news-date" datetime="2025-11">Nov 2025</time> Defended my PhD thesis and graduated from Mila / Université de Montréal</li>
+</ul>
+</div>
+
+<a href="/news/">All news &rarr;</a>

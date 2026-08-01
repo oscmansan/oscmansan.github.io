@@ -55,25 +55,64 @@ For the full version, see my [LinkedIn](https://www.linkedin.com/in/oscmansan).
 
 ## Technical Skills
 
-* **Languages:** Python (proficient); C++, Java, C, CUDA, SQL (familiar)
-* **ML Frameworks:** PyTorch, HuggingFace (Transformers, Diffusers), vLLM, NumPy, OpenCV
-* **Tools:** Git, Docker, LaTeX, TensorBoard, Weights & Biases, Submitit
-* **Systems:** Linux/Unix, Slurm, distributed training/inference, parallel programming
+<dl class="cv-grid">
+  <dt>Languages</dt>
+  <dd>Python (proficient); C++, Java, C, CUDA, SQL (familiar)</dd>
+
+  <dt>ML Frameworks</dt>
+  <dd>PyTorch, HuggingFace (Transformers, Diffusers), vLLM, NumPy, OpenCV</dd>
+
+  <dt>Tools</dt>
+  <dd>Git, Docker, LaTeX, TensorBoard, Weights &amp; Biases, Submitit</dd>
+
+  <dt>Systems</dt>
+  <dd>Linux/Unix, Slurm, distributed training/inference, parallel programming</dd>
+</dl>
 
 ## Selected Awards
 
-* **Graduate Excellence Scholarships**, Université de Montréal (J. Armand Bombardier, DIRO, J.A. DeSève, and Artificial Intelligence funds) <span class="cv-date">(2022, 2023, 2024, 2025)</span>
-* **National End-of-Degree Award in University Education**, Spanish Ministry of Education <span class="cv-date">(2021)</span>
-* **Mila PhD Scholarship**, Mila - Quebec AI Institute <span class="cv-date">(2021)</span>
-* **McGill Engineering Doctoral Award** (declined), Faculty of Engineering, McGill University <span class="cv-date">(2021)</span>
-* **Mitacs Accelerate International Grant**, Mitacs Canada <span class="cv-date">(2020)</span>
+<dl class="cv-grid">
+  <dt>2022, 2023, 2024, 2025</dt>
+  <dd><strong>Graduate Excellence Scholarships</strong>, Université de Montréal (J. Armand Bombardier, DIRO, J.A. DeSève, and Artificial Intelligence funds)</dd>
+
+  <dt>2021</dt>
+  <dd><strong>National End-of-Degree Award in University Education</strong>, Spanish Ministry of Education</dd>
+
+  <dt>2021</dt>
+  <dd><strong>Mila PhD Scholarship</strong>, Mila - Quebec AI Institute</dd>
+
+  <dt>2021</dt>
+  <dd><strong>McGill Engineering Doctoral Award</strong> (declined), Faculty of Engineering, McGill University</dd>
+
+  <dt>2020</dt>
+  <dd><strong>Mitacs Accelerate International Grant</strong>, Mitacs Canada</dd>
+</dl>
 
 ## Academic Service
 
-* **Invited Talks:** [Deep Learning Barcelona Symposium 2025](https://sites.google.com/view/dlbcn2025/program/talks) — spotlight talk ([recording](https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521))
-* **Reviewer:** CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, MAIS 2024, EMNLP 2024, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
-* **Teaching Assistant:** Links between Computer Vision and Language, UdeM <span class="cv-date">(2023)</span>; Postgraduate AI for Deep Learning, UPC School <span class="cv-date">(2020)</span>; Summer School on Deep Learning for Vision, UPC <span class="cv-date">(2019)</span>
+<dl class="cv-grid">
+  <dt>Invited Talks</dt>
+  <dd><a href="https://sites.google.com/view/dlbcn2025/program/talks">Deep Learning Barcelona Symposium 2025</a> — spotlight talk (<a href="https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&amp;t=9521">recording</a>)</dd>
+
+  <dt>Reviewer</dt>
+  <dd>CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, MAIS 2024, EMNLP 2024, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021</dd>
+
+  <dt>Teaching Assistant</dt>
+  <dd>Links between Computer Vision and Language, UdeM <span class="cv-date">(2023)</span>; Postgraduate AI for Deep Learning, UPC School <span class="cv-date">(2020)</span>; Summer School on Deep Learning for Vision, UPC <span class="cv-date">(2019)</span></dd>
+</dl>
 
 ## Languages
 
-* English (fluent, TOEFL 109/120), French (advanced, C1), Catalan (native), Spanish (native)
+<dl class="cv-grid">
+  <dt>English</dt>
+  <dd>Fluent (TOEFL 109/120)</dd>
+
+  <dt>French</dt>
+  <dd>Advanced (C1)</dd>
+
+  <dt>Catalan</dt>
+  <dd>Native</dd>
+
+  <dt>Spanish</dt>
+  <dd>Native</dd>
+</dl>

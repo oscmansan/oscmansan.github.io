@@ -3,28 +3,48 @@
    ========================================================================== */
 
 $(document).ready(function () {
-  // Set the theme on page load
+  // Theme: system preference by default, explicit choice wins
   var setTheme = function (theme) {
-    const use_theme = theme || localStorage.getItem("theme") || $("html").attr("data-theme");
-    if (use_theme === "dark") {
-      $("html").attr("data-theme", "dark");
-      $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
-    } else if (use_theme === "light") {
-      $("html").removeAttr("data-theme");
-      $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
-    }
-  }
+    var use_theme = theme || localStorage.getItem("theme") || $("html").attr("data-theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    var isDark = use_theme === "dark";
+    $("html").attr("data-theme", isDark ? "dark" : null);
+    if (!isDark) $("html").removeAttr("data-theme");
+    $("#theme-toggle")
+      .attr("aria-checked", isDark ? "true" : "false")
+      .attr("aria-label", isDark ? "Dark theme" : "Light theme");
+  };
   setTheme();
 
-  // Toggle the theme
-  var toggleTheme = function () {
-    const current_theme = $("html").attr("data-theme");
-    const new_theme = current_theme === "dark" ? "light" : "dark";
-    localStorage.setItem("theme", new_theme);
-    setTheme(new_theme);
-  }
-  $('#theme-toggle').on('click', function () {
+  var toggleTheme = function (forced) {
+    var next = forced || ($("html").attr("data-theme") === "dark" ? "light" : "dark");
+    localStorage.setItem("theme", next);
+    setTheme(next);
+  };
+  $("#theme-toggle").on("click", function () {
     toggleTheme();
+    if (window.gtag) gtag("event", "theme_toggle", { theme: $("html").attr("data-theme") || "light" });
+  });
+
+  /* Follow the OS if the visitor has never chosen explicitly */
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+    if (!localStorage.getItem("theme")) setTheme(e.matches ? "dark" : "light");
+  });
+
+  /* Analytics: name the outbound clicks */
+  document.querySelectorAll(".pub-links a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      if (!window.gtag) return;
+      var entry = a.closest(".pub-entry");
+      gtag("event", "resource_click", {
+        resource_type: a.textContent.trim(),
+        publication: entry ? entry.querySelector(".pub-title").textContent.trim() : null
+      });
+    });
+  });
+
+  document.querySelector(".author__contact")?.addEventListener("click", function () {
+    if (window.gtag) gtag("event", "contact_click", { method: "linkedin" });
   });
 
   // These should be the same as the settings in _variables.scss
