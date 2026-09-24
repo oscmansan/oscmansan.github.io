@@ -3,6 +3,13 @@
 > Research Scientist at Meta Superintelligence Labs, Zurich.
 > Images, video, language, and even actions are different aspects of the same underlying reality. I build multimodal models that understand and generate images, video, and text, along with the metrics and reward models that evaluate and steer them. Lately, I've been drawn to embodied and physical AI. I believe that vision-language-action models (VLAs) and world-action models (WAMs) are the natural next step for VLMs and video world models: actions are just another modality represented as a sequence of embeddings. What a model learns from observation can then carry over to action, and from there, to improving itself through its own experience.
 
+## Site
+
+- [Home](https://oscmansan.github.io/): Bio, research focus, news and selected publications
+- [CV](https://oscmansan.github.io/cv/): Experience, education, skills, awards and service
+- [CV (PDF)](https://oscmansan.github.io/files/Oscar_Manas_CV.pdf): Printable CV including the full publication list
+- [Publications](https://oscmansan.github.io/publications/): All papers with authors, venues and links
+
 ## Current Role
 
 Research Scientist, Meta Superintelligence Labs, Zurich (Oct 2025 – present)
@@ -20,7 +27,7 @@ Working on generative model distillation and real-time interactive world models,
 
 ## Education
 
-- PhD Computer Science, Mila / Université de Montréal (2021–2025). Advisor: Prof. Aishwarya Agrawal. GPA 4.3/4.3. Thesis: "Towards efficient, reliable and measurable vision-language systems" (https://hdl.handle.net/1866/44263)
+- PhD Computer Science, Mila / Université de Montréal (2021–2025). Advisor: Prof. Aishwarya Agrawal. GPA 4.3/4.3. Thesis: [Towards efficient, reliable and measurable vision-language systems](https://hdl.handle.net/1866/44263)
 - MSc Computer Vision, Universitat Autònoma de Barcelona / Computer Vision Center (2018–2020). Rank 1/35.
 - BSc Computer Science, Universitat Politècnica de Catalunya (2013–2017). Rank 1/235.
 
@@ -38,18 +45,18 @@ Keywords: multimodal AI, vision-language models, VLA, world-action models, world
 
 ## Publications (12 papers, sorted by arXiv submission date)
 
-1. "LatentLens: Revealing Highly Interpretable Visual Tokens in LLMs" — ICML 2026 (arXiv Feb 2026). https://arxiv.org/abs/2602.00462
-2. "SneakPeek: Future-Guided Instructional Streaming Video Generation" — arXiv Dec 2025. https://arxiv.org/abs/2512.13019
-3. "Controlling Multimodal LLMs via Reward-guided Decoding" — ICCV 2025 (accepted Jun 2025). https://arxiv.org/abs/2508.11616
-4. "Learning What Matters: Prioritized Concept Learning via Relative Error-driven Sample Selection" — CVPR 2026 (arXiv Jun 2025). https://arxiv.org/abs/2506.01085
-5. "EvalGIM: A Library for Evaluating Generative Image Models" — arXiv Dec 2024. https://arxiv.org/abs/2412.10604
-6. "Consistency, Diversity and Realism: Pareto Fronts of Conditional Image Generative Models" — arXiv Jun 2024. https://arxiv.org/abs/2406.10429
-7. "An Introduction to Vision-Language Modeling" — arXiv May 2024. https://arxiv.org/abs/2405.17247
-8. "Improving Text-to-Image Consistency via Automatic Prompt Optimization" — TMLR (accepted Jun 2024). https://arxiv.org/abs/2403.17804
-9. "Improving Automatic VQA Evaluation Using Large Language Models" — AAAI 2024 (accepted Dec 2023). https://arxiv.org/abs/2310.02567
-10. "MAPL: Parameter-Efficient Adaptation of Unimodal Pre-Trained Models for Vision-Language Few-Shot Prompting" — EACL 2023. https://arxiv.org/abs/2210.07179
-11. "Seasonal Contrast: Unsupervised Pre-Training from Uncurated Remote Sensing Data" — ICCV 2021. https://arxiv.org/abs/2103.16607
-12. "A Weakly Supervised Consistency-based Learning Method for COVID-19 Segmentation in CT Images" — WACV 2021. https://arxiv.org/abs/2007.02180
+1. [LatentLens: Revealing Highly Interpretable Visual Tokens in LLMs](https://arxiv.org/abs/2602.00462) — ICML 2026 (arXiv Feb 2026)
+2. [SneakPeek: Future-Guided Instructional Streaming Video Generation](https://arxiv.org/abs/2512.13019) — arXiv Dec 2025
+3. [Controlling Multimodal LLMs via Reward-guided Decoding](https://arxiv.org/abs/2508.11616) — ICCV 2025 (accepted Jun 2025)
+4. [Learning What Matters: Prioritized Concept Learning via Relative Error-driven Sample Selection](https://arxiv.org/abs/2506.01085) — CVPR 2026 (arXiv Jun 2025)
+5. [EvalGIM: A Library for Evaluating Generative Image Models](https://arxiv.org/abs/2412.10604) — arXiv Dec 2024
+6. [Consistency, Diversity and Realism: Pareto Fronts of Conditional Image Generative Models](https://arxiv.org/abs/2406.10429) — arXiv Jun 2024
+7. [An Introduction to Vision-Language Modeling](https://arxiv.org/abs/2405.17247) — arXiv May 2024
+8. [Improving Text-to-Image Consistency via Automatic Prompt Optimization](https://arxiv.org/abs/2403.17804) — TMLR (accepted Jun 2024)
+9. [Improving Automatic VQA Evaluation Using Large Language Models](https://arxiv.org/abs/2310.02567) — AAAI 2024 (accepted Dec 2023)
+10. [MAPL: Parameter-Efficient Adaptation of Unimodal Pre-Trained Models for Vision-Language Few-Shot Prompting](https://arxiv.org/abs/2210.07179) — EACL 2023
+11. [Seasonal Contrast: Unsupervised Pre-Training from Uncurated Remote Sensing Data](https://arxiv.org/abs/2103.16607) — ICCV 2021
+12. [A Weakly Supervised Consistency-based Learning Method for COVID-19 Segmentation in CT Images](https://arxiv.org/abs/2007.02180) — WACV 2021
 
 ## Selected Awards
 
@@ -64,13 +71,13 @@ Keywords: multimodal AI, vision-language models, VLA, world-action models, world
 ## Academic Service
 
 - Reviewer: CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, MAIS 2024, EMNLP 2024, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
-- Invited talk, Deep Learning Barcelona Symposium 2025 (Dec 2025). Recording: https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521
+- Invited talk, Deep Learning Barcelona Symposium 2025 (Dec 2025). [Recording](https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521)
 
 ## Links
 
-- Website: https://oscmansan.github.io
-- LinkedIn: https://www.linkedin.com/in/oscmansan
-- Google Scholar: https://scholar.google.com/citations?user=Crn-tf0AAAAJ
-- GitHub: https://github.com/oscmansan
-- X: https://x.com/oscmansan
-- CV (PDF): https://oscmansan.github.io/files/Oscar_Manas_CV.pdf
+- [Website](https://oscmansan.github.io/)
+- [LinkedIn](https://www.linkedin.com/in/oscmansan)
+- [Google Scholar](https://scholar.google.com/citations?user=Crn-tf0AAAAJ)
+- [GitHub](https://github.com/oscmansan)
+- [X (Twitter)](https://x.com/oscmansan)
+- [CV (PDF)](https://oscmansan.github.io/files/Oscar_Manas_CV.pdf)

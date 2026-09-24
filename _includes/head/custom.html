@@ -11,7 +11,9 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)"/>
 <meta name="theme-color" content="#1a1816" media="(prefers-color-scheme: dark)"/>
-<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<!-- Non-critical stylesheets load without blocking first paint -->
+<link rel="preload" href="{{ base_path }}/assets/css/academicons.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript><link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/></noscript>
 
 <meta name="keywords" content="{{ site.author.keywords | concat: site.author.seo_keywords | join: ', ' }}"/>
 
@@ -30,6 +32,7 @@
 <!-- Web fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"></noscript>
 
 <!-- end custom head snippets -->
