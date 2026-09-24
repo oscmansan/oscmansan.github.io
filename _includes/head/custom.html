@@ -11,9 +11,6 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)"/>
 <meta name="theme-color" content="#1a1816" media="(prefers-color-scheme: dark)"/>
-<!-- Non-critical stylesheets load without blocking first paint -->
-<link rel="preload" href="{{ base_path }}/assets/css/academicons.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-<noscript><link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/></noscript>
 
 <meta name="keywords" content="{{ site.author.keywords | concat: site.author.seo_keywords | join: ', ' }}"/>
 
@@ -29,10 +26,9 @@
   })();
 </script>
 
-<!-- Web fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"></noscript>
+<!-- Web fonts: self-hosted (assets/fonts, OFL) and preloaded so they are ready
+     at first paint; avoids the layout shift of a late font swap. -->
+<link rel="preload" href="{{ base_path }}/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ base_path }}/assets/fonts/newsreader-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- end custom head snippets -->

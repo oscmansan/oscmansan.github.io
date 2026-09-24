@@ -30,10 +30,10 @@
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
-        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
+        <li class="author__desktop">{% include icons/location.svg %}{{ author.location }}</li>
       {% endif %}
       {% if author.employer %}
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
+        <li class="author__desktop">{% include icons/building.svg %}{{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
@@ -44,7 +44,7 @@
 
       <!-- LinkedIn first: the primary contact channel -->
       {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}">{% include icons/linkedin.svg %}LinkedIn</a></li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
@@ -52,7 +52,7 @@
         <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
       {% endif %}      
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+        <li><a href="{{ author.googlescholar }}">{% include icons/google-scholar.svg %}Google Scholar</a></li>
       {% endif %}
       {% if author.semantic %}
         <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic Scholar</a></li>
@@ -84,7 +84,7 @@
         <li><a href="https://dribbble.com/{{ author.dribbble }}"><i class="fab fa-fw fa-dribbble icon-pad-right" aria-hidden="true"></i>Dribbble</a></li>
       {% endif %}      
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+        <li><a href="https://github.com/{{ author.github }}">{% include icons/github.svg %}GitHub</a></li>
       {% endif %}
       {% if author.kaggle %}
         <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
@@ -143,7 +143,7 @@
         <li><a href="https://{{ author.tumblr }}.tumblr.com"><i class="fab fa-fw fa-tumblr icon-pad-right" aria-hidden="true"></i>Tumblr</a></li>
       {% endif %}      
       {% if author.twitter %}
-        <li><a href="https://x.com/{{ author.twitter }}"><i class="fab fa-fw fa-x-twitter icon-pad-right" aria-hidden="true"></i>X (Twitter)</a></li>
+        <li><a href="https://x.com/{{ author.twitter }}">{% include icons/x.svg %}X (Twitter)</a></li>
       {% endif %}
       {% if author.vine %}
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fab fa-fw fa-vine icon-pad-right" aria-hidden="true"></i>Vine</a></li>

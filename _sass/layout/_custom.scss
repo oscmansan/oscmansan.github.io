@@ -20,6 +20,25 @@ html[data-theme="dark"] {
   --thumb-bg: #f4f1ea;
 }
 
+/* Web fonts (self-hosted, Latin subset; see _includes/head/custom.html)
+   ========================================================================== */
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-latin-var.woff2") format("woff2");
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("../fonts/newsreader-latin-var.woff2") format("woff2");
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Typography
    ========================================================================== */
 
@@ -111,7 +130,7 @@ a {
 
 /* One comfortable measure for everything in the main column, and a compact,
    centered layout on wide screens instead of stretching to 1280px. */
-.page__inner-wrap,
+.page,
 .archive {
   max-width: 44rem;
 }
@@ -123,12 +142,28 @@ a {
   }
 }
 
-/* The desktop sidebar is position: fixed, so the theme's percentage width is
-   relative to the viewport, not the (capped) layout. Cap it so it never runs
-   into the text column on wide screens. */
+/* Desktop geometry. The theme sizes the fixed sidebar and the floated text
+   column in percentages of different boxes, so their gap drifted with the
+   window width. Pin both: a 190px sidebar, then the text column a fixed
+   distance after it, and centre the pair. */
 @media (min-width: 1024px) {
+  #main,
+  .masthead__inner-wrap {
+    max-width: 1000px;
+  }
+
   .sidebar {
-    max-width: 190px;
+    width: 190px;
+    padding-right: 0;
+  }
+
+  .page,
+  .archive {
+    float: none;
+    width: auto;
+    margin-left: 250px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -360,19 +395,19 @@ html[data-theme="dark"] {
 
 }
 
-/* Monochrome icons; doubled class beats the theme's per-brand colors */
-.author__urls.social-icons {
-  i,
-  .ai {
-    color: var(--muted);
-    width: 1.25em;
-    text-align: center;
-  }
+/* Inline SVG icons (_includes/icons/), monochrome, sized to the text */
+.author__urls .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.6em;
+  vertical-align: -0.125em;
+  fill: var(--muted);
+  transition: fill 0.2s ease;
+}
 
-  a:hover i,
-  a:hover .ai {
-    color: var(--accent);
-  }
+.author__urls a:hover .icon {
+  fill: var(--accent);
 }
 
 /* On small screens show the profile links as a row under the name instead of
