@@ -1,0 +1,73 @@
+{%- comment -%}
+  Structured data (schema.org JSON-LD) for search engines and AI agents.
+  One Person entity, referenced by @id: the homepage wraps it in a ProfilePage,
+  and the publications page lists each paper as a ScholarlyArticle authored by it.
+{%- endcomment -%}
+{%- assign person_id = site.url | append: "/#person" -%}
+{%- assign knows = site.author.keywords | concat: site.author.seo_keywords -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "name": "Oscar Mañas",
+      "alternateName": "Oscar Manas",
+      "jobTitle": {{ site.author.job_title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "worksFor": { "@type": "Organization", "name": "Meta Superintelligence Labs", "url": "https://ai.meta.com/" },
+      "workLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Zurich", "addressCountry": "CH" } },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Université de Montréal", "url": "https://www.umontreal.ca/" },
+        { "@type": "ResearchOrganization", "name": "Mila - Quebec AI Institute", "url": "https://mila.quebec/" },
+        { "@type": "CollegeOrUniversity", "name": "Universitat Autònoma de Barcelona", "url": "https://www.uab.cat/" },
+        { "@type": "CollegeOrUniversity", "name": "Universitat Politècnica de Catalunya", "url": "https://www.upc.edu/" }
+      ],
+      "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Ph.D. in Computer Science", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Université de Montréal" } },
+      "knowsAbout": {{ knows | jsonify }},
+      "knowsLanguage": ["English", "French", "Catalan", "Spanish"],
+      "url": {{ site.url | append: "/" | jsonify }},
+      "image": {{ site.url | append: "/images/og-image.jpg" | jsonify }},
+      "sameAs": [
+        "https://www.linkedin.com/in/oscmansan",
+        "https://scholar.google.com/citations?user=Crn-tf0AAAAJ",
+        "https://github.com/oscmansan",
+        "https://x.com/oscmansan",
+        "https://orcid.org/0000-0001-5512-7664",
+        "https://www.semanticscholar.org/author/Oscar-Ma%C3%B1as/1796269096",
+        "https://bsky.app/profile/oscmansan.bsky.social"
+      ]
+    }
+    {%- if page.url == "/" -%},
+    {
+      "@type": "ProfilePage",
+      "@id": {{ site.url | append: "/" | jsonify }},
+      "url": {{ site.url | append: "/" | jsonify }},
+      "name": {{ page.seo_title | default: site.title | jsonify }},
+      "dateModified": {{ site.time | date_to_xmlschema | jsonify }},
+      "mainEntity": { "@id": {{ person_id | jsonify }} }
+    }
+    {%- endif -%}
+    {%- if page.url == "/publications/" -%}
+    {%- assign pubs = site.publications | sort: "sort_date" | reverse -%}
+    {%- for pub in pubs -%},
+    {
+      "@type": "ScholarlyArticle",
+      "headline": {{ pub.title | jsonify }},
+      "author": [
+        {%- assign names = pub.authors | strip_html | remove: ", et al." | split: ", " -%}
+        {%- for n in names -%}
+          {%- assign n = n | strip -%}
+          {%- if n == "Oscar Mañas" -%}{ "@id": {{ person_id | jsonify }} }{%- else -%}{ "@type": "Person", "name": {{ n | jsonify }} }{%- endif -%}{%- unless forloop.last -%}, {% endunless -%}
+        {%- endfor -%}
+      ],
+      "datePublished": {{ pub.year | append: "" | jsonify }},
+      "isPartOf": { "@type": "CreativeWorkSeries", "name": {{ pub.venue | jsonify }} }
+      {%- if pub.paperurl -%}, "url": {{ pub.paperurl | jsonify }}{%- endif %}
+    }
+    {%- endfor -%}
+    {%- endif %}
+  ]
+}
+</script>

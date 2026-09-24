@@ -21,3 +21,6 @@ CLAUDE.md
 # Ignore local bundler install (gems + config)
 vendor/
 .bundle/
+
+# Local Claude Code settings (permissions, preview config)
+.claude/

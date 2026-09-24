@@ -15,12 +15,30 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+
+    <!-- Theme toggle: a bulb hanging from the top edge; lit = light mode.
+         Icon: Material Symbols "Lightbulb 2" (Apache 2.0), flipped to hang.
+         The theme's JS binds #theme-toggle and swaps classes on #theme-icon. -->
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+      <i id="theme-icon" aria-hidden="true"></i>
+      <svg viewBox="0 0 24 42" aria-hidden="true">
+        <line class="bulb__cord" x1="12" y1="0" x2="12" y2="18.5"/>
+        <g transform="translate(-1.92 15.68) scale(0.029 -0.029)">
+          <path class="bulb__on" d="M400-240q-33 0-56.5-23.5T320-320v-50q-57-39-88.5-100T200-600q0-117 81.5-198.5T480-880q117 0 198.5 81.5T760-600q0 69-31.5 129.5T640-370v50q0 33-23.5 56.5T560-240H400Zm0 160q-17 0-28.5-11.5T360-120v-40h240v40q0 17-11.5 28.5T560-80H400Z"/>
+          <path class="bulb__off" d="M400-240q-33 0-56.5-23.5T320-320v-50q-57-39-88.5-100T200-600q0-117 81.5-198.5T480-880q117 0 198.5 81.5T760-600q0 69-31.5 129.5T640-370v50q0 33-23.5 56.5T560-240H400Zm0-80h160v-92l34-24q41-28 63.5-71.5T680-600q0-83-58.5-141.5T480-800q-83 0-141.5 58.5T280-600q0 49 22.5 92.5T366-436l34 24v92Zm0 240q-17 0-28.5-11.5T360-120v-40h240v40q0 17-11.5 28.5T560-80H400Zm80-520Z"/>
+        </g>
+      </svg>
+    </button>
+    <script>
+      document.getElementById("theme-toggle").addEventListener("click", function () {
+        this.classList.remove("is-swinging");
+        void this.offsetWidth; // restart the animation on repeated clicks
+        this.classList.add("is-swinging");
+      });
+    </script>
   </div>
 </div>

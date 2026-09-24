@@ -15,5 +15,7 @@ Disallow: /tags/
 Disallow: /year-archive/
 Disallow: /page-archive/
 Disallow: /collection-archive/
+Disallow: /sitemap/
+Disallow: /talkmap/
 
 Sitemap: https://oscmansan.github.io/sitemap.xml

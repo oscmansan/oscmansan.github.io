@@ -1,0 +1,711 @@
+/* ==========================================================================
+   SITE CUSTOMIZATIONS
+   Loaded last so these rules override the theme defaults.
+   ========================================================================== */
+
+:root {
+  --accent: #b0492c;
+  --accent-soft: rgba(176, 73, 44, 0.09);
+  --muted: #6b655c;
+  --rule: #e8e3d9;
+  --thumb-bg: #ffffff;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+}
+
+html[data-theme="dark"] {
+  --accent: #e2876a;
+  --accent-soft: rgba(226, 135, 106, 0.12);
+  --muted: #a39b90;
+  --rule: #2e2a26;
+  --thumb-bg: #f4f1ea;
+}
+
+/* Typography
+   ========================================================================== */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv11", "ss01";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page__content a,
+.archive a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+/* Section headings: small, understated, with a hairline rule */
+.page__content h2,
+.archive h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* Serif voice: name, page titles and the homepage bio. Everything that is
+   scanned (news, publications, CV) stays in the sans. */
+.page__title {
+  font-family: var(--serif);
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+/* On small screens the sidebar sits directly above the title */
+@media (max-width: 1023px) {
+  .page__title {
+    margin-top: 1.75rem;
+  }
+}
+
+.bio p {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-feature-settings: normal;
+}
+
+/* Layout
+   ========================================================================== */
+
+/* The theme reserves 2/12 columns on the right for a sidebar this site never
+   uses; give that space back to the content. */
+.page {
+  @include breakpoint($large) {
+    padding-right: 0;
+  }
+}
+
+/* One comfortable measure for everything in the main column, and a compact,
+   centered layout on wide screens instead of stretching to 1280px. */
+.page__inner-wrap,
+.archive {
+  max-width: 44rem;
+}
+
+#main,
+.masthead__inner-wrap {
+  @include breakpoint($x-large) {
+    max-width: 1120px;
+  }
+}
+
+/* Masthead
+   ========================================================================== */
+
+/* Name is always shown in the sidebar, so hide the nav brand. site.title stays
+   set, so <title>/og:title remain populated. !important beats the theme's
+   more specific display: table-cell. */
+.masthead__menu-item--lg {
+  display: none !important;
+}
+
+.masthead {
+  border-bottom: 1px solid var(--rule);
+}
+
+.greedy-nav {
+  a {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .visible-links a:before {
+    background: var(--accent);
+    height: 2px;
+  }
+
+  /* Hamburger: thin lines on a transparent button instead of a gray block */
+  button {
+    background-color: transparent;
+  }
+
+  .navicon {
+    width: 22px;
+    height: 2px;
+    background: var(--global-text-color);
+
+    &:before,
+    &:after {
+      width: 22px;
+      height: 2px;
+      background: var(--global-text-color);
+    }
+
+    &:before {
+      top: -7px;
+    }
+
+    &:after {
+      bottom: -7px;
+    }
+  }
+
+  .close .navicon {
+    background: transparent;
+
+    &:before,
+    &:after {
+      top: 0;
+    }
+  }
+}
+
+/* Theme toggle: a bulb hanging from the top edge of the page, lit in light
+   mode and off in dark mode. Swings briefly when pulled. */
+.masthead__inner-wrap {
+  position: relative;
+  padding-right: 3.5rem; /* keep the nav (and mobile hamburger) clear of it */
+}
+
+#theme-icon {
+  display: none;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 20px;
+  height: 35px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transform-origin: 50% 0;
+  transition: rotate 0.3s ease;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  &:hover {
+    rotate: 4deg;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  &.is-swinging {
+    animation: bulb-swing 1.4s ease-out;
+  }
+}
+
+.bulb__cord {
+  stroke: var(--muted);
+  stroke-width: 1;
+  opacity: 0.6;
+}
+
+.bulb__on {
+  fill: var(--accent);
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--accent) 45%, transparent));
+}
+
+.bulb__off {
+  display: none;
+  fill: var(--muted);
+}
+
+html[data-theme="dark"] {
+  .bulb__on {
+    display: none;
+  }
+
+  .bulb__off {
+    display: inline;
+  }
+}
+
+@keyframes bulb-swing {
+  0%   { rotate: 0deg; }
+  15%  { rotate: 10deg; }
+  35%  { rotate: -7deg; }
+  55%  { rotate: 4deg; }
+  75%  { rotate: -2deg; }
+  100% { rotate: 0deg; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle,
+  .theme-toggle.is-swinging {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Sidebar
+   ========================================================================== */
+
+.author__avatar img {
+  border: none;
+  padding: 0;
+  box-shadow: 0 0 0 1px var(--rule);
+}
+
+.author__name,
+.sidebar .author__name {
+  font-family: var(--serif);
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin-top: 0.75rem;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.author__bio,
+.sidebar .author__bio {
+  font-size: 1rem;
+  color: var(--muted);
+  margin: 0.15rem 0 0;
+}
+
+/* Research interests: quiet text list rather than a wall of chips */
+.author__keywords {
+  margin: 0.9rem 0 1.1rem;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* On small screens the sidebar sits above the bio, which already covers this */
+@media (max-width: 1023px) {
+  .author__keywords {
+    display: none;
+  }
+}
+
+/* Narrow desktop: vertical sidebar without the keywords, which normally
+   provide the gap between the tagline and the links */
+@media (min-width: 925px) and (max-width: 1023px) {
+  .author__urls-wrapper {
+    margin-top: 1.1rem;
+  }
+}
+
+/* Non-breaking space before the dot so a line never starts with a separator */
+.author__keyword:not(:last-child)::after {
+  content: "\00a0· ";
+  opacity: 0.6;
+}
+
+.author__urls {
+  li {
+    white-space: normal;
+  }
+
+  li,
+  a {
+    font-size: 0.9rem;
+    color: var(--global-text-color);
+  }
+
+  a:hover {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+}
+
+/* Monochrome icons; doubled class beats the theme's per-brand colors */
+.author__urls.social-icons {
+  i,
+  .ai {
+    color: var(--muted);
+    width: 1.25em;
+    text-align: center;
+  }
+
+  a:hover i,
+  a:hover .ai {
+    color: var(--accent);
+  }
+}
+
+/* On small screens show the profile links as a row under the name instead of
+   hiding them behind the theme's "Follow" dropdown. */
+@media (max-width: 924px) {
+  /* The theme's JS pads the sidebar by the masthead height, which is only
+     needed when the sidebar is fixed on desktop. */
+  .sidebar {
+    padding-top: 0 !important;
+  }
+
+  /* Avatar centred against the name + tagline, links on a row below */
+  .sidebar [itemtype="http://schema.org/Person"] {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 0.9rem;
+  }
+
+  .author__avatar {
+    display: block;
+    width: 56px;
+
+    img {
+      display: block;
+      width: 56px;
+      height: 56px;
+      max-width: none;
+    }
+  }
+
+  .author__content {
+    display: block;
+    padding-left: 0;
+  }
+
+  .author__name,
+  .sidebar .author__name {
+    margin-top: 0;
+  }
+
+  .author__urls-wrapper {
+    grid-column: 1 / -1;
+  }
+
+  .author__urls-wrapper {
+    display: block;
+    margin-top: 0.75rem;
+
+    button {
+      display: none;
+    }
+  }
+
+  .author__urls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.1rem;
+    position: static;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/* Homepage
+   ========================================================================== */
+
+/* News: dates in their own column */
+.news-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.news-list li {
+  position: relative;
+  padding: 0.45rem 0 0.45rem 6.25rem;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.news-list em {
+  font-style: normal;
+}
+
+.news-list .news-date {
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .news-list li {
+    padding-left: 0;
+  }
+
+  .news-list em {
+  font-style: normal;
+}
+
+.news-list .news-date {
+    position: static;
+    display: block;
+  }
+}
+
+.news-list details {
+  margin-top: 0.25rem;
+
+  summary {
+    display: inline-block;
+    margin: 0.5rem 0 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--accent);
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::after {
+      content: " \2193"; /* ↓ */
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  /* Swap the label to "Show less ↑" while expanded */
+  &[open] summary {
+    font-size: 0;
+
+    &::after {
+      content: "Show less \2191"; /* ↑ */
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.more-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Publications
+   ========================================================================== */
+
+.pub-entry {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--rule);
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.pub-image {
+  flex: 0 0 150px;
+  max-width: 150px;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border-radius: 6px;
+    background: var(--thumb-bg);
+    box-shadow: 0 0 0 1px var(--rule);
+  }
+}
+
+.pub-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1rem;
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: none !important;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.pub-authors {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+
+  strong {
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+}
+
+.pub-venue {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+}
+
+.pub-links {
+  display: inline;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+
+  a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none !important;
+    margin-right: 0.6rem;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.pub-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.05rem 0.45rem;
+  margin-right: 0.6rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .pub-entry {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .pub-image {
+    flex: none;
+    max-width: 220px;
+  }
+}
+
+/* CV
+   ========================================================================== */
+
+.page__content a.cv-download,
+.archive a.cv-download {
+  display: inline-block;
+  margin: 0.25rem 0.75rem 0.25rem 0;
+  padding: 0.2em 0.75em;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--accent-soft);
+    text-decoration: none;
+  }
+}
+
+.cv-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.cv-date {
+  float: right;
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.page__content > ul > li,
+.archive > ul > li {
+  margin-bottom: 0.9rem;
+}
+
+.page__content li li,
+.archive li li {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .cv-date {
+    float: none;
+    display: block;
+    margin-left: 0;
+  }
+}
+
+/* Footer
+   ========================================================================== */
+
+.page__footer {
+  background: transparent;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+
+  footer {
+    font-size: 0.8rem;
+  }
+}

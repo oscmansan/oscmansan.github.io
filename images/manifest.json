@@ -1,5 +1,8 @@
 {
-	"name": "OOjs UI icon academic-progressive",
+	"name": "Oscar Mañas",
+	"short_name": "Oscar Mañas",
+	"theme_color": "#b0492c",
+	"background_color": "#faf8f3",
 	"icons": [
 		{
 			"src": "/images/favicon-192x192.png",

@@ -1,19 +1,22 @@
 # Oscar Mañas
 
-> Research Scientist at Meta Superintelligence Labs (Media Generation team), Zurich.
-> Multimodal AI researcher specializing in vision-language generative models —
-> image, video, and text generation and understanding. In practice, a through-line in my work is the loop between generation, understanding, and evaluation: building reward models and metrics, and using them to steer model behavior.
+> Research Scientist at Meta Superintelligence Labs, Zurich.
+> Images, video, language, and even actions are different aspects of the same underlying reality. I build multimodal models that understand and generate images, video, and text, along with the metrics and reward models that evaluate and steer them. Lately, I've been drawn to embodied and physical AI. I believe that vision-language-action models (VLAs) and world-action models (WAMs) are the natural next step for VLMs and video world models: actions are just another modality represented as a sequence of embeddings. What a model learns from observation can then carry over to action, and from there, to improving itself through its own experience.
 
 ## Current Role
 
-Research Scientist, Meta Superintelligence Labs — Media Generation team, Zürich (Oct 2025 – present)
+Research Scientist, Meta Superintelligence Labs, Zurich (Oct 2025 – present)
 Working on generative model distillation and real-time interactive world models, delivering 10× speedups for image-editing models deployed across Meta's products.
 
 ## Previous Roles
 
-- Visiting Researcher, Meta FAIR, Montreal (Jan 2024 – 2025). Reward-guided decoding to control multimodal LLMs at inference time (ICCV 2025).
-- Research Scientist Intern, Meta FAIR, Montreal (Jun 2023 – 2023). Automatic prompt optimization (OPT2I) for text-to-image consistency (TMLR 2024).
-- Research Intern, Element AI / ServiceNow, Montreal (2020 – 2021). Data-efficient ML and self-supervised visual representation learning.
+- Visiting Researcher, Meta FAIR, Montreal (2024 – 2025). Reward-guided decoding to control multimodal LLMs at inference time, cutting object hallucination by ~70% (ICCV 2025).
+- Research Scientist Intern, Meta FAIR, Montreal (2023). Automatic prompt optimization (OPT2I) improving text-to-image consistency by up to 25% (TMLR 2024, Featured Certification).
+- Research Intern, Element AI, Montreal (2020 – 2021). Seasonal Contrast (SeCo), self-supervised pre-training for remote sensing (ICCV 2021; 500+ citations).
+- Computer Vision Engineer, Mediapro R&D, Barcelona (2019 – 2020). Real-time video analysis pipelines for automatic sports production, deployed in live broadcast.
+- Research Assistant, Image Processing Group, UPC, Barcelona (2018 – 2019). Self-supervised visual representations for sample-efficient reinforcement learning.
+- Deep Learning Engineer, Restb.ai, Barcelona (2017 – 2019). Production visual-recognition models for real-estate imagery at scale.
+- Research Assistant, Architectures and Compilers Group, UPC, Barcelona (2016 – 2017). Efficient deep neural network inference on low-power edge devices.
 
 ## Education
 
@@ -24,11 +27,14 @@ Working on generative model distillation and real-time interactive world models,
 ## Research Expertise
 
 - Multimodal learning and vision-language models
-- Visual grounding and vision-language understanding
-- Evaluation & benchmarks for vision-language systems
+- Embodied and physical AI: vision-language-action models (VLAs) and world-action models (WAMs)
+- World models
 - Reward models and reward-guided decoding
-- Text-to-image and video generation
-- Controllable generation
+- Evaluation & benchmarks for vision-language systems
+- Image and video generation
+- Visual grounding and vision-language understanding
+
+Keywords: multimodal AI, vision-language models, VLA, world-action models, world models, embodied AI, physical AI, robotics, reward models, image and video generation
 
 ## Publications (12 papers, sorted by arXiv submission date)
 
@@ -57,13 +63,14 @@ Working on generative model distillation and real-time interactive world models,
 
 ## Academic Service
 
-- Reviewer: CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
+- Reviewer: CVPR 2026, ECCV 2026, CVPR 2025, ICLR 2025, MAIS 2024, EMNLP 2024, ECCV 2024, CVPR 2024, NeurIPS 2023, ACL 2023, ICCV 2021
 - Invited talk, Deep Learning Barcelona Symposium 2025 (Dec 2025). Recording: https://www.youtube.com/live/Xz7Est3JlBw?si=ZIT4hey-Zy6vm30n&t=9521
 
 ## Links
 
 - Website: https://oscmansan.github.io
-- Google Scholar: https://scholar.google.com/citations?user=Crn-tf0AAAAJ
 - LinkedIn: https://www.linkedin.com/in/oscmansan
+- Google Scholar: https://scholar.google.com/citations?user=Crn-tf0AAAAJ
 - GitHub: https://github.com/oscmansan
-- Bluesky: https://bsky.app/profile/oscmansan.bsky.social
+- X: https://x.com/oscmansan
+- CV (PDF): https://oscmansan.github.io/files/Oscar_Manas_CV.pdf
