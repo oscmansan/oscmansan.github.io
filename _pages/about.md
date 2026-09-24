@@ -3,7 +3,7 @@ permalink: /
 title: ""
 seo_title: "Oscar Mañas — Research Scientist, Multimodal AI"
 author_profile: true
-description: "Oscar Mañas — Research Scientist at Meta Superintelligence Labs. Multimodal AI: vision-language models, world models, and embodied and physical AI (VLAs, WAMs)."
+description: "Oscar Mañas (Oscar Manas) — Research Scientist at Meta Superintelligence Labs. Multimodal AI: vision-language models, world models, and embodied and physical AI (VLAs, WAMs)."
 redirect_from:
   - /about/
   - /about.html

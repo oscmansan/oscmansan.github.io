@@ -43,6 +43,7 @@ author:
   # Not shown on the page; only emitted in structured data and meta keywords
   # for search engines and AI agents.
   seo_keywords:
+    - Oscar Manas
     - Robotics
     - Embodied AI
     - Physical AI

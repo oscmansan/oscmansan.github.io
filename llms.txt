@@ -1,6 +1,6 @@
 # Oscar Mañas
 
-> Research Scientist at Meta Superintelligence Labs, Zurich.
+> Oscar Mañas (also written Oscar Manas), Research Scientist at Meta Superintelligence Labs, Zurich.
 > Images, video, language, and even actions are different aspects of the same underlying reality. I build multimodal models that understand and generate images, video, and text, along with the metrics and reward models that evaluate and steer them. Lately, I've been drawn to embodied and physical AI. I believe that vision-language-action models (VLAs) and world-action models (WAMs) are the natural next step for VLMs and video world models: actions are just another modality represented as a sequence of embeddings. What a model learns from observation can then carry over to action, and from there, to improving itself through its own experience.
 
 ## Site

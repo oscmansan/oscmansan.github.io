@@ -259,8 +259,12 @@ a {
     overflow: visible;
   }
 
-  &:hover {
-    rotate: 4deg;
+  /* Only on real pointers: on touch screens :hover sticks after a tap and
+     would leave the bulb tilted */
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      rotate: 4deg;
+    }
   }
 
   &:focus-visible {
