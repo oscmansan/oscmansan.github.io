@@ -123,6 +123,15 @@ a {
   }
 }
 
+/* The desktop sidebar is position: fixed, so the theme's percentage width is
+   relative to the viewport, not the (capped) layout. Cap it so it never runs
+   into the text column on wide screens. */
+@media (min-width: 1024px) {
+  .sidebar {
+    max-width: 190px;
+  }
+}
+
 /* Masthead
    ========================================================================== */
 
