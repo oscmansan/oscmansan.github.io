@@ -9,18 +9,17 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)"/>
-<meta name="theme-color" content="#1a1816" media="(prefers-color-scheme: dark)"/>
+<meta name="theme-color" content="#faf8f3"/>
 
 <meta name="keywords" content="{{ site.author.keywords | concat: site.author.seo_keywords | join: ', ' }}"/>
 
-<!-- Follow the visitor's OS color scheme unless they picked one with the toggle.
+<!-- Light by default; dark only if the visitor picked it with the toggle.
      Runs before first paint to avoid a flash of the wrong theme. -->
 <script>
   (function () {
     var t;
     try { t = localStorage.getItem("theme"); } catch (e) {}
-    if (!t) t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    if (!t) t = "light";
     if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
     else document.documentElement.removeAttribute("data-theme");
   })();
