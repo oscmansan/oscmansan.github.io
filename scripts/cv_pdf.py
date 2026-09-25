@@ -44,33 +44,33 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 9.5pt;
   line-height: 1.4;
-  color: #1d1b18;
+  color: #151c33;
 }
-a { color: #b0492c; text-decoration: none; }
+a { color: #3a47b3; text-decoration: none; }
 header { margin-bottom: 4mm; }
 h1 { font-family: "Newsreader", serif; font-size: 24pt; font-weight: 500; margin: 0; letter-spacing: -0.01em; }
 .role { margin: 1mm 0 0; font-size: 10.5pt; }
-.links { margin: 1mm 0 0; color: #6b655c; font-size: 8.5pt; }
+.links { margin: 1mm 0 0; color: #5b6478; font-size: 8.5pt; }
 .links a { white-space: nowrap; }
 h2 {
   font-size: 9pt;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #6b655c;
-  border-bottom: 0.5pt solid #e0d9cc;
+  color: #5b6478;
+  border-bottom: 0.5pt solid #dfe3ec;
   padding-bottom: 1mm;
   margin: 5mm 0 2mm;
 }
 ul { margin: 0; padding-left: 4mm; }
 li { margin: 0 0 1.2mm; }
-li > ul { margin-top: 0.5mm; color: #4a453e; }
+li > ul { margin-top: 0.5mm; color: #3f4658; }
 li > ul > li { margin-bottom: 0; }
-.cv-date { float: right; color: #6b655c; margin-left: 4mm; }
+.cv-date { float: right; color: #5b6478; margin-left: 4mm; }
 ol.pubs { padding-left: 5mm; }
 ol.pubs li { margin-bottom: 1.8mm; }
-.pub-title, .pub-title a { font-weight: 600; color: #1d1b18; }
-.pub-authors { color: #4a453e; }
-.pub-venue { color: #6b655c; }
+.pub-title, .pub-title a { font-weight: 600; color: #151c33; }
+.pub-authors { color: #3f4658; }
+.pub-venue { color: #5b6478; }
 p { margin: 0 0 2mm; }
 h2 { break-after: avoid; }
 li { break-inside: avoid; }

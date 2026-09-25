@@ -1,8 +1,8 @@
 {
 	"name": "Oscar Mañas",
 	"short_name": "Oscar Mañas",
-	"theme_color": "#b0492c",
-	"background_color": "#faf8f3",
+	"theme_color": "#3a47b3",
+	"background_color": "#f5f7fb",
 	"icons": [
 		{
 			"src": "/images/favicon-192x192.png",

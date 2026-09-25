@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DARK THEME — warm near-black, terracotta accent
+   DARK THEME — Sonoma evening: teal-black, periwinkle accent
    ========================================================================== */
 
 /* Color palette */
@@ -8,12 +8,12 @@ $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
-$background                 : #1a1816;
-$background-light           : #2e2a26;
-$background-lighter         : #3a3530;
-$text                       : #ece7df;
-$text-muted                 : #a39b90;
-$link                       : #e2876a;
+$background                 : #0d1a1c;
+$background-light           : #1f2e31;
+$background-lighter         : #2a3b3e;
+$text                       : #e6ebf2;
+$text-muted                 : #98a6b3;
+$link                       : #94a2f7;
 $link-dark                  : mix(#000, $link, 15%);
 $link-light                 : mix(#fff, $link, 20%);
 

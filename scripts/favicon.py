@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate the Penrose-triangle favicon set into images/.
 
-Two variants of the same figure on the terracotta tile:
+Two variants of the same figure on a solid indigo tile:
   - outline (white strokes)            -> large icons: 180/192/512 px
   - tinted faces (three white tints)   -> browser tab: favicon.svg, .ico, 32 px
 The outline's many parallel lines blur together at tab size; filled faces keep
@@ -23,7 +23,7 @@ from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "images"
-BG, FG = "#b0492c", (250, 248, 243)  # terracotta accent, paper
+BG, FG = "#3a47b3", (245, 247, 251)  # Sonoma indigo accent, paper
 RADIUS = 7 / 32  # tile corner radius as a fraction of the size
 
 # Visible edges (polylines) of the Penrose triangle

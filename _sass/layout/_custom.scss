@@ -4,20 +4,27 @@
    ========================================================================== */
 
 :root {
-  --accent: #b0492c;
-  --accent-soft: rgba(176, 73, 44, 0.09);
-  --muted: #6b655c;
-  --rule: #e8e3d9;
+  /* Sonoma palette: indigo sky, green hills */
+  --accent: #3a47b3;
+  --accent-soft: rgba(58, 71, 179, 0.08);
+  --accent-2: #36773f;
+  --accent-3: #6a4c8c;
+  --accent-3-soft: rgba(106, 76, 140, 0.1);
+  --muted: #5b6478;
+  --rule: #e1e5ee;
   --thumb-bg: #ffffff;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
 }
 
 html[data-theme="dark"] {
-  --accent: #e2876a;
-  --accent-soft: rgba(226, 135, 106, 0.12);
-  --muted: #a39b90;
-  --rule: #2e2a26;
-  --thumb-bg: #f4f1ea;
+  --accent: #94a2f7;
+  --accent-soft: rgba(148, 162, 247, 0.12);
+  --accent-2: #7cc46d;
+  --accent-3: #c7aee6;
+  --accent-3-soft: rgba(199, 174, 230, 0.12);
+  --muted: #98a6b3;
+  --rule: #1f2e31;
+  --thumb-bg: #eef1f6;
 }
 
 /* Web fonts (self-hosted, Latin subset; see _includes/head/custom.html)
@@ -79,7 +86,8 @@ a {
   }
 }
 
-/* Section headings: small, understated, with a hairline rule */
+/* Section headings: small caps label over a hairline, with a short solid
+   accent bar at its start */
 .page__content h2,
 .archive h2 {
   font-size: 0.8rem;
@@ -89,8 +97,9 @@ a {
   color: var(--muted);
   margin-top: 2.75rem;
   margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.55rem;
   border-bottom: 1px solid var(--rule);
+  background: linear-gradient(var(--accent), var(--accent)) left bottom / 2.5rem 2px no-repeat;
 }
 
 /* Serif voice: name, page titles and the homepage bio. Everything that is
@@ -286,7 +295,6 @@ a {
 
 .bulb__on {
   fill: var(--accent);
-  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--accent) 45%, transparent));
 }
 
 .bulb__off {
@@ -515,7 +523,7 @@ html[data-theme="dark"] {
   top: 0.55rem;
   font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
-  color: var(--muted);
+  color: var(--accent-2);
   white-space: nowrap;
 }
 
@@ -602,8 +610,22 @@ html[data-theme="dark"] {
     object-fit: contain;
     border-radius: 6px;
     background: var(--thumb-bg);
-    box-shadow: 0 0 0 1px var(--rule);
+    box-shadow: 0 0 0 1px var(--rule); /* hairline border, not a shadow */
+    transition: box-shadow 0.2s ease;
   }
+}
+
+.pub-entry:hover .pub-image img {
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+/* Flat design: no drop shadows. Neutralize the theme's hover shadow on
+   linked images and its dropdown menu shadow. */
+.page__content a:hover img,
+.archive a:hover img,
+.archive__item:hover .archive__item-teaser,
+.greedy-nav .hidden-links {
+  box-shadow: none;
 }
 
 .pub-text {
@@ -618,6 +640,7 @@ html[data-theme="dark"] {
   margin: 0;
   padding: 0;
   border: 0;
+  background: none;
   text-transform: none;
   color: var(--global-text-color);
   line-height: 1.4;
@@ -649,10 +672,10 @@ html[data-theme="dark"] {
 
 .pub-venue {
   display: inline-block;
-  margin-top: 0.35rem;
+  margin-top: 0.4rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--global-text-color);
+  color: var(--accent-2);
 }
 
 .pub-links {
@@ -661,13 +684,18 @@ html[data-theme="dark"] {
   font-size: 0.8rem;
 
   a {
+    display: inline-block;
+    padding: 0.05rem 0.55rem;
+    margin-right: 0.35rem;
+    border-radius: 999px;
+    background: var(--accent-soft);
     color: var(--accent);
     font-weight: 500;
     text-decoration: none !important;
-    margin-right: 0.6rem;
+    transition: background-color 0.2s ease;
 
     &:hover {
-      text-decoration: underline !important;
+      background: color-mix(in srgb, var(--accent) 18%, transparent);
     }
   }
 }
@@ -679,8 +707,8 @@ html[data-theme="dark"] {
   padding: 0.05rem 0.45rem;
   margin-right: 0.6rem;
   border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--accent-3-soft);
+  color: var(--accent-3);
 }
 
 @media (max-width: 600px) {
@@ -728,8 +756,51 @@ html[data-theme="dark"] {
   margin-left: 1rem;
   font-size: 0.875rem;
   font-variant-numeric: tabular-nums;
-  color: var(--muted);
+  color: var(--accent-2);
   white-space: nowrap;
+}
+
+/* Experience and Education as a timeline: a hairline with an indigo node per
+   entry (the current role filled), serif role titles, plain descriptions */
+#experience + ul,
+#education + ul {
+  list-style: none;
+  margin-left: 0.3rem;
+  padding-left: 1.4rem;
+  border-left: 1px solid var(--rule);
+
+  > li {
+    position: relative;
+    margin-bottom: 1.35rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: calc(-1.4rem - 5px);
+      top: 0.5em;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--global-bg-color);
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+
+    > strong:first-child {
+      font-family: var(--serif);
+      font-size: 1.12rem;
+      font-weight: 500;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.3rem;
+  }
+}
+
+#experience + ul > li:first-child::before {
+  background: var(--accent);
 }
 
 .page__content > ul > li,

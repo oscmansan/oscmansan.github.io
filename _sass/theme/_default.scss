@@ -2,13 +2,13 @@
    DEFAULT (LIGHT) THEME — same hue family as dark theme
    ========================================================================== */
 
-/* Color palette — warm paper, ink, terracotta accent */
-$paper                      : #faf8f3;
-$text                       : #1d1b18;
-$text-muted                 : #6b655c;
-$link                       : #b0492c;
-$border                     : #e8e3d9;
-$surface                    : #f2eee6;
+/* Color palette — Sonoma (macOS wallpaper): cool paper, indigo ink */
+$paper                      : #f5f7fb;
+$text                       : #151c33;
+$text-muted                 : #5b6478;
+$link                       : #3a47b3;
+$border                     : #e1e5ee;
+$surface                    : #eceff6;
 
 /* Kept for compatibility with theme mixins */
 $gray                       : #777777;
