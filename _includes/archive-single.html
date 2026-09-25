@@ -15,13 +15,15 @@
       <img src="{{ base_path }}/images/{{ thumb }}" alt="" loading="lazy" width="480" decoding="async">
     </div>
     <div class="pub-text">
-      <span class="pub-title">
+      {%- comment -%} h2 directly under the Publications page title, h3 under the homepage's h2 {%- endcomment -%}
+      {%- if page.url == "/publications/" -%}{%- assign title_tag = "h2" -%}{%- else -%}{%- assign title_tag = "h3" -%}{%- endif %}
+      <{{ title_tag }} class="pub-title">
         {% if post.paperurl %}
           <a href="{{ post.paperurl }}">{{ title }}</a>
         {% else %}
           {{ title }}
         {% endif %}
-      </span>
+      </{{ title_tag }}>
       <span class="pub-authors">{{ post.authors }}</span>
       <span class="pub-venue">{{ post.venue }}</span>
       <span class="pub-links">

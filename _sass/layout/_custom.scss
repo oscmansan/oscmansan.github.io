@@ -332,6 +332,7 @@ html[data-theme="dark"] {
 
 .author__name,
 .sidebar .author__name {
+  margin-bottom: 0;
   font-family: var(--serif);
   font-size: 1.75rem;
   font-weight: 500;
@@ -375,9 +376,7 @@ html[data-theme="dark"] {
   }
 }
 
-/* Non-breaking space before the dot so a line never starts with a separator */
-.author__keyword:not(:last-child)::after {
-  content: "\00a0· ";
+.author__sep {
   opacity: 0.6;
 }
 
@@ -614,7 +613,15 @@ html[data-theme="dark"] {
   line-height: 1.5;
 }
 
-.pub-title {
+.pub-text .pub-title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-transform: none;
+  color: var(--global-text-color);
+  line-height: 1.4;
+  letter-spacing: normal;
   font-weight: 600;
   font-size: 1rem;
 

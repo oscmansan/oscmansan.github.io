@@ -15,18 +15,18 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name"><a href="/">{{ author.name }}</a></h3>
+    {%- if page.url == "/" -%}{%- assign name_tag = "h1" -%}{%- else -%}{%- assign name_tag = "p" -%}{%- endif %}
+    <{{ name_tag }} class="author__name"><a href="/">{{ author.name }}</a></{{ name_tag }}>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
     {% if author.keywords %}
     <div class="author__keywords">
-      {% for kw in author.keywords %}<span class="author__keyword">{{ kw }}</span>{% endfor %}
+      {% for kw in author.keywords %}<span class="author__keyword">{{ kw }}</span>{% unless forloop.last %}<span class="author__sep">&nbsp;·</span> {% endunless %}{% endfor %}
     </div>
     {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
