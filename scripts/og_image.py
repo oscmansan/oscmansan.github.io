@@ -26,7 +26,7 @@ PAPER, INK = "#f5f7fb", "#151c33"
 INDIGO, GREEN = "#3a47b3", "#36773f"
 
 NAME = "Oscar Mañas"
-ROLE = "Research Scientist at Meta"
+ROLE = "Research Scientist, Multimodal AI"  # matches seo_title in _pages/about.md
 URL = "oscmansan.github.io"
 
 
