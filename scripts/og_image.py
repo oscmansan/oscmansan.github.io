@@ -2,7 +2,7 @@
 """Generate the 1200x630 social share card (og:image) into images/og-card.jpg.
 
 This is the preview LinkedIn, Slack, X, etc. show for links to the site.
-Text on the left (name, role, URL), portrait on the right, in the
+Text on the left (name, role, field, URL), portrait on the right, in the
 Sonoma palette. images/og-image.jpg stays the square portrait used by JSON-LD.
 
 Usage (from the repo root):
@@ -22,11 +22,12 @@ OUT = ROOT / "images" / "og-card.jpg"
 
 W, H = 1200, 630
 PHOTO_W = 470  # portrait column on the right
-PAPER, INK = "#f5f7fb", "#151c33"
+PAPER, INK, MUTED = "#f5f7fb", "#151c33", "#5b6478"
 INDIGO, GREEN = "#3a47b3", "#36773f"
 
 NAME = "Oscar Mañas"
-ROLE = "Research Scientist, Multimodal AI"  # matches seo_title in _pages/about.md
+ROLE = "Research Scientist at Meta"
+FIELD = "Multimodal AI"  # as in seo_title in _pages/about.md
 URL = "oscmansan.github.io"
 
 
@@ -48,6 +49,7 @@ def main():
     d.rectangle([x, 196, x + 56, 202], fill=INDIGO)  # heading bar, as on the site
     d.text((x, 226), NAME, font=font("Newsreader-Medium.ttf", 88), fill=INK)
     d.text((x, 352), ROLE, font=font("Inter-SemiBold.ttf", 34), fill=INK)
+    d.text((x, 400), FIELD, font=font("Inter-Regular.ttf", 34), fill=MUTED)
     d.text((x, H - 96), URL, font=font("Inter-SemiBold.ttf", 28), fill=GREEN)
 
     card.save(OUT, quality=88, optimize=True, progressive=True)
